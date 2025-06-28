@@ -4,20 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MySite</title>
-  <link href="output.css" rel="stylesheet">
+  <!-- Correct path: output.css is in the root of dist/ -->
+  <link href="/output.css" rel="stylesheet">
 </head>
 <body class="bg-gray-50 flex flex-col min-h-screen">
 
   <!-- NAVIGATION -->
   <nav class="bg-blue-500">
-    <div class="container mx-auto flex items-center justify-between py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
       <a href="#" class="text-white text-xl font-bold">MySite</a>
       <ul class="flex space-x-6 list-none">
         <li><a href="#" class="text-white hover:text-gray-200">Home</a></li>
 
         <!-- Services dropdown -->
         <li class="relative group">
-          <button class="flex items-center text-white hover:text-gray-200">
+          <button class="flex items-center text-white hover:text-gray-200 focus:outline-none">
             Services
             <svg class="w-4 h-4 ml-1 fill-current" viewBox="0 0 20 20">
               <path d="M5.5 7l4.5 4 4.5-4z"/>
@@ -34,7 +35,7 @@
 
         <!-- About dropdown -->
         <li class="relative group">
-          <button class="flex items-center text-white hover:text-gray-200">
+          <button class="flex items-center text-white hover:text-gray-200 focus:outline-none">
             About
             <svg class="w-4 h-4 ml-1 fill-current" viewBox="0 0 20 20">
               <path d="M5.5 7l4.5 4 4.5-4z"/>
@@ -62,10 +63,11 @@
     <h1 class="text-6xl font-extrabold text-blue-600">Hello</h1>
   </main>
 
-  <!-- OPTIONAL FOOTER -->
+  <!-- FOOTER -->
   <footer class="py-4 bg-gray-200 text-center">
     &copy; 2025 MySite
   </footer>
 
 </body>
 </html>
+
