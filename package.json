@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "tailwindcss -i ./styles/input.css -o ./dist/output.css --minify"
-  },
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "build:css": "tailwindcss -i ./styles/input.css -o ./dist/output.css --minify",
+  "build": "npm run build:css && cp -R src/* dist/"
+},
+
   "keywords": [],
   "author": "",
   "license": "ISC",
