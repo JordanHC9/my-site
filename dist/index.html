@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -8,36 +8,29 @@
 </head>
 <body class="flex flex-col min-h-screen bg-gray-50">
 
-  <!-- HEADER WITH MEGA‐MENU -->
+  <!-- NAVIGATION -->
   <nav class="bg-white shadow">
-    <!-- Top‐level categories -->
-    <div class="max-w-7xl mx-auto grid grid-cols-5 text-center">
-      <div class="py-4 font-bold hover:bg-gray-100 cursor-pointer group">ACCOUNTING</div>
-      <div class="py-4 font-bold hover:bg-gray-100 cursor-pointer">CORPORATION TAX</div>
-      <div class="py-4 font-bold hover:bg-gray-100 cursor-pointer">PAYROLL</div>
-      <div class="py-4 font-bold hover:bg-gray-100 cursor-pointer">VAT</div>
-      <div class="py-4 font-bold hover:bg-gray-100 cursor-pointer">BUSINESS START UP</div>
-    </div>
+    <div class="max-w-7xl mx-auto px-4">
+      <ul class="flex space-x-6">
+        <!-- ACCOUNTING with dropdown -->
+        <li class="relative group">
+          <a href="#" class="block py-4 font-bold hover:text-blue-600">ACCOUNTING</a>
+          <ul class="absolute top-full left-0 mt-1 w-48 bg-white border rounded shadow-lg
+                     opacity-0 group-hover:opacity-100 invisible group-hover:visible
+                     transition-opacity">
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Bookkeeping</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Accounts Preparation</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Sole Trader Tax Return</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">CIS</a></li>
+          </ul>
+        </li>
 
-    <!-- Sub‐menu row -->
-    <div class="max-w-7xl mx-auto grid grid-cols-5 border-t">
-      <!-- Mega‐menu under ACCOUNTING -->
-      <div class="relative group">
-        <button class="w-full h-0 focus:outline-none"></button>
-        <ul class="absolute left-0 mt-1 w-56 bg-white border rounded shadow-lg
-                   opacity-0 group-hover:opacity-100 invisible group-hover:visible
-                   transition-opacity">
-          <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Bookkeeping</a></li>
-          <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Accounts Preparation</a></li>
-          <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Sole Trader Tax Return</a></li>
-          <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">CIS</a></li>
-        </ul>
-      </div>
-      <!-- Empty placeholders for alignment -->
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+        <!-- Other headers -->
+        <li><a href="#" class="block py-4 font-bold hover:text-blue-600">CORPORATION TAX</a></li>
+        <li><a href="#" class="block py-4 font-bold hover:text-blue-600">PAYROLL</a></li>
+        <li><a href="#" class="block py-4 font-bold hover:text-blue-600">VAT</a></li>
+        <li><a href="#" class="block py-4 font-bold hover:text-blue-600">BUSINESS START UP</a></li>
+      </ul>
     </div>
   </nav>
 
