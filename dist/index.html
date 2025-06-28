@@ -1,31 +1,38 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MySite</title>
+  <title>MySite – Home</title>
   <link href="output.css" rel="stylesheet">
 </head>
 <body class="flex flex-col min-h-screen bg-gray-50">
 
-  <!-- NAVIGATION -->
-  <nav class="bg-white shadow">
+  <!-- NAVIGATION WITH FIXED DROPDOWN -->
+  <nav class="bg-white shadow overflow-visible">
     <div class="max-w-7xl mx-auto px-4">
       <ul class="flex space-x-6">
-        <!-- ACCOUNTING with dropdown -->
+        <!-- ACCOUNTING with clickable submenu -->
         <li class="relative group">
           <a href="#" class="block py-4 font-bold hover:text-blue-600">ACCOUNTING</a>
-          <ul class="absolute top-full left-0 mt-1 w-48 bg-white border rounded shadow-lg
-                     opacity-0 group-hover:opacity-100 invisible group-hover:visible
-                     transition-opacity">
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Bookkeeping</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Accounts Preparation</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Sole Trader Tax Return</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">CIS</a></li>
+          <ul
+            class="absolute top-full left-0 mt-1 w-56 bg-white border rounded shadow-lg
+                   opacity-0 group-hover:opacity-100 invisible group-hover:visible
+                   transition-opacity z-50">
+            <li>
+              <a href="bookkeeping.html" class="block px-4 py-2 hover:bg-gray-100">
+                Bookkeeping
+              </a>
+            </li>
+            <li>
+              <a href="accounts-preparation.html" class="block px-4 py-2 hover:bg-gray-100">
+                Accounts Preparation
+              </a>
+            </li>
           </ul>
         </li>
 
-        <!-- Other headers -->
+        <!-- OTHER TOP-LEVEL LINKS -->
         <li><a href="#" class="block py-4 font-bold hover:text-blue-600">CORPORATION TAX</a></li>
         <li><a href="#" class="block py-4 font-bold hover:text-blue-600">PAYROLL</a></li>
         <li><a href="#" class="block py-4 font-bold hover:text-blue-600">VAT</a></li>
@@ -34,7 +41,7 @@
     </div>
   </nav>
 
-  <!-- MAIN HERO -->
+  <!-- HERO SECTION -->
   <main class="flex-grow flex items-center justify-center">
     <h1 class="text-6xl font-extrabold text-blue-600">Hello</h1>
   </main>
