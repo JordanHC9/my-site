@@ -1,7 +1,6 @@
 [build]
-  command   = "cd MY-SITE && npm install && npm run build:css"
-  publish   = "MY-SITE/src"
+  command   = "npm run build:css"
+  publish   = "src"
 
 [build.environment]
   NODE_VERSION = "18"
-
