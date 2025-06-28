@@ -2,72 +2,136 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MySite</title>
-  <!-- Correct path: output.css is in the root of dist/ -->
-  <link href="/output.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Accounting Company Leeds</title>
+  <link href="output.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50 flex flex-col min-h-screen">
+
+<body class="flex flex-col min-h-screen">
+
+  <!-- Top bar -->
+  <div class="bg-gray-800 text-gray-200 text-sm">
+    <div class="max-w-7xl mx-auto flex justify-between px-4 py-2">
+      <div>Need Help? Talk to the Experts: <strong>0113 240 3227</strong></div>
+      <div>
+        <a href="#" class="hover:text-white">Facebook</a>
+        <span class="mx-2">|</span>
+        <a href="#" class="hover:text-white">LinkedIn</a>
+      </div>
+    </div>
+  </div>
 
   <!-- NAVIGATION -->
-  <nav class="bg-blue-500">
-    <div class="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
-      <a href="#" class="text-white text-xl font-bold">MySite</a>
-      <ul class="flex space-x-6 list-none">
-        <li><a href="#" class="text-white hover:text-gray-200">Home</a></li>
-
-        <!-- Services dropdown -->
+  <nav class="bg-blue-600">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
+      <a href="#" class="text-white text-2xl font-bold">TAC Leeds</a>
+      <ul class="flex space-x-6 text-white">
+        <li><a href="#" class="hover:underline">Home</a></li>
         <li class="relative group">
-          <button class="flex items-center text-white hover:text-gray-200 focus:outline-none">
-            Services
-            <svg class="w-4 h-4 ml-1 fill-current" viewBox="0 0 20 20">
-              <path d="M5.5 7l4.5 4 4.5-4z"/>
-            </svg>
+          <button class="flex items-center hover:underline focus:outline-none">
+            Accounting
+            <svg class="w-4 h-4 ml-1 fill-current" viewBox="0 0 20 20"><path d="M5.5 7l4.5 4 4.5-4z"/></svg>
           </button>
-          <ul class="absolute left-0 mt-2 w-40 bg-white text-blue-700 rounded shadow-lg 
+          <ul class="absolute left-0 mt-2 w-48 bg-white text-blue-600 rounded shadow-lg 
                      opacity-0 group-hover:opacity-100 invisible group-hover:visible 
                      transition-opacity">
-            <li><a href="#" class="block px-4 py-2 hover:bg-blue-50">sing</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-blue-50">Dance</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-blue-50">Type</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Bookkeeping</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Landlord Tax</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Self Assessment</a></li>
           </ul>
         </li>
-
-        <!-- About dropdown -->
-        <li class="relative group">
-          <button class="flex items-center text-white hover:text-gray-200 focus:outline-none">
-            About
-            <svg class="w-4 h-4 ml-1 fill-current" viewBox="0 0 20 20">
-              <path d="M5.5 7l4.5 4 4.5-4z"/>
-            </svg>
-          </button>
-          <ul class="absolute left-0 mt-2 w-40 bg-white text-blue-700 rounded shadow-lg 
-                     opacity-0 group-hover:opacity-100 invisible group-hover:visible 
-                     transition-opacity">
-            <li><a href="#" class="block px-4 py-2 hover:bg-blue-50">hi</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-blue-50">bi</a></li>
-          </ul>
-        </li>
-
-        <li><a href="#" class="text-white hover:text-gray-200">News/Blog</a></li>
-        <li><a href="#" class="text-white hover:text-gray-200">Our Causes</a></li>
-        <li><a href="#" class="text-white hover:text-gray-200">Testimonials</a></li>
-        <li><a href="#" class="text-white hover:text-gray-200">Resources</a></li>
-        <li><a href="#" class="text-white hover:text-gray-200">Contact</a></li>
+        <li><a href="#" class="hover:underline">Payroll</a></li>
+        <li><a href="#" class="hover:underline">VAT</a></li>
+        <li><a href="#" class="hover:underline">Business Start-up</a></li>
+        <li><a href="#" class="hover:underline">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- HERO SECTION -->
-  <main class="flex-grow flex items-center justify-center">
-    <h1 class="text-6xl font-extrabold text-blue-600">Hello</h1>
-  </main>
+  <!-- Hero -->
+  <header class="bg-cover bg-center" style="background-image:url('https://via.placeholder.com/1600x600');">
+    <div class="bg-black bg-opacity-50">
+      <div class="max-w-4xl mx-auto py-32 px-4 text-center text-white">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Friendly Chartered Certified Accountants in Leeds</h1>
+        <p class="mb-6">Free consultation & bespoke accounting solutions for small businesses, contractors & landlords.</p>
+        <a href="#" class="bg-blue-500 hover:bg-blue-700 px-6 py-3 rounded text-lg font-semibold">Get a Free Consultation</a>
+      </div>
+    </div>
+  </header>
 
-  <!-- FOOTER -->
-  <footer class="py-4 bg-gray-200 text-center">
-    &copy; 2025 MySite
+  <!-- Services Grid -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+      <div class="grid gap-8 md:grid-cols-3">
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Bookkeeping & Accounts</h3>
+          <p class="text-gray-600 mb-4">Accurate records and management accounts to keep you informed.</p>
+          <a href="#" class="text-blue-600 hover:underline">Learn more →</a>
+        </div>
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Payroll & CIS</h3>
+          <p class="text-gray-600 mb-4">Hassle-free payroll and Construction Industry Scheme returns.</p>
+          <a href="#" class="text-blue-600 hover:underline">Learn more →</a>
+        </div>
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Taxation & VAT</h3>
+          <p class="text-gray-600 mb-4">Minimise costs with expert tax planning and VAT returns.</p>
+          <a href="#" class="text-blue-600 hover:underline">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-8">What Our Clients Say</h2>
+      <blockquote class="mb-6 italic text-gray-700">
+        “We have been clients for many years – the team always go the extra mile and make everything easy.”
+      </blockquote>
+      <p class="font-semibold">— Jane Smith, CEO of Acme Ltd</p>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="py-16 bg-blue-600 text-white">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">Ready for a Free Consultation?</h2>
+      <p class="mb-6">Call us on <strong>0113 240 3227</strong> or <a href="#" class="underline">book online</a>.</p>
+      <a href="#" class="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded font-semibold">Book Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-auto bg-gray-800 text-gray-400 py-8">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-white font-bold mb-2">The Accounting Company Leeds</h3>
+        <p>172 Easterly Road, Leeds LS8 3AD</p>
+        <p>Tel: 0113 240 3227</p>
+        <p>Email: info@tacleeds.co.uk</p>
+      </div>
+      <div>
+        <h3 class="text-white font-bold mb-2">Quick Links</h3>
+        <ul>
+          <li><a href="#" class="hover:underline">Home</a></li>
+          <li><a href="#" class="hover:underline">Services</a></li>
+          <li><a href="#" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white font-bold mb-2">Connect</h3>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-white">Facebook</a>
+          <a href="#" class="hover:text-white">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-8 text-sm">© 2025 The Accounting Company Leeds Ltd. All rights reserved.</div>
   </footer>
 
 </body>
 </html>
+
 
