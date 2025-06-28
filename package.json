@@ -1,15 +1,21 @@
 {
   "name": "hayes-lee",
   "version": "1.0.0",
+  "description": "A simple Tailwind CSS brochure site",
   "main": "index.js",
   "scripts": {
-  "test": "echo \"Error: no test specified\" && exit 1",
-  "build:css": "tailwindcss -i ./styles/input.css -o ./dist/output.css --minify",
-  "build": "npm run build:css && cp -R src/* dist/"
-},
-
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss -i ./styles/input.css -o ./dist/output.css --minify"
+  },
+  "engines": {
+    "node": "18.x"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "devDependencies": {
+    "autoprefixer": "^10.0.0",
+    "postcss": "^8.0.0",
+    "tailwindcss": "^3.0.0"
+  }
 }
