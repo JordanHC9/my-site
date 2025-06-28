@@ -1,12 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello</title>
-  <link href="output.css" rel="stylesheet">
-</head>
-<body class="flex items-center justify-center h-screen bg-gray-50">
-  <h1 class="text-5xl font-extrabold">Hello</h1>
-</body>
-</html>
+<nav class="bg-blue-500">
+  <div class="container mx-auto flex items-center justify-between">
+    <!-- Logo or site title -->
+    <a href="#" class="text-white text-xl font-bold py-4">MySite</a>
+
+    <!-- Menu -->
+    <ul class="flex space-x-6">
+      <li><a href="#" class="text-white py-4 border-b-4 border-white">Home</a></li>
+
+      <!-- Services dropdown -->
+      <li class="relative group">
+        <button class="flex items-center text-white py-4 hover:opacity-90">
+          Services
+          <svg class="w-4 h-4 ml-1 fill-current" viewBox="0 0 20 20">
+            <path d="M5.5 7l4.5 4 4.5-4z"/>
+          </svg>
+        </button>
+        <ul class="absolute left-0 mt-2 w-40 bg-white text-blue-700 rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity">
+          <li><a href="#" class="block px-4 py-2 hover:bg-blue-50">Design</a></li>
+          <li><a href="#" class="block px-4 py-2 hover:bg-blue-50">Development</a></li>
+          <li><a href="#" class="block px-4 py-2 hover:bg-blue-50">Marketing</a></li>
+        </ul>
+      </li>
+
+      <!-- About dropdown -->
+      <li class="relative group">
+        <button class="flex items-center text-white py-4 hover:opacity-90">
+          About
+          <svg class="w-4 h-4 ml-1 fill-current" viewBox="0 0 20 20">
+            <path d="M5.5 7l4.5 4 4.5-4z"/>
+          </svg>
+        </button>
+        <ul class="absolute left-0 mt-2 w-40 bg-white text-blue-700 rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity">
+          <li><a href="#" class="block px-4 py-2 hover:bg-blue-50">Our Story</a></li>
+          <li><a href="#" class="block px-4 py-2 hover:bg-blue-50">Team</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#" class="text-white py-4 hover:opacity-90">News/Blog</a></li>
+      <li><a href="#" class="text-white py-4 hover:opacity-90">Our Causes</a></li>
+      <li><a href="#" class="text-white py-4 hover:opacity-90">Testimonials</a></li>
+      <li><a href="#" class="text-white py-4 hover:opacity-90">Resources</a></li>
+      <li><a href="#" class="text-white py-4 hover:opacity-90">Contact</a></li>
+    </ul>
+  </div>
+</nav>
