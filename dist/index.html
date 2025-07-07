@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hayes Lee Accountants – Home</title>
+  <title>Home | Hayes Lee Accountants</title>
   <link href="output.css" rel="stylesheet">
 </head>
 <body class="flex flex-col min-h-screen bg-gray-50">
@@ -16,14 +16,20 @@
         <img src="./images/hayes-lee-logo.svg" alt="Hayes Lee Accountants" class="h-16 w-auto"/>
       </a>
       <!-- Menu Links -->
-      <ul class="ml-auto flex space-x-6 text-gray-700">
-        <li><a href="index.html"                  class="py-2 hover:text-blue-700">Home</a></li>
-        <li><a href="bookkeeping.html"            class="py-2 hover:text-blue-700">Bookkeeping</a></li>
-        <li><a href="accounts-preparation.html"   class="py-2 hover:text-blue-700">Accounts Prep</a></li>
-        <li><a href="payroll.html"                class="py-2 hover:text-blue-700">Payroll</a></li>
-        <li><a href="Sole Trader.html"            class="py-2 hover:text-blue-700">Sole Trader</a></li>
-        <li><a href="CIS.html"                    class="py-2 hover:text-blue-700">CIS</a></li>
-        <li><a href="VAT.html"                    class="py-2 hover:text-blue-700">VAT</a></li>
+      <ul class="ml-auto flex space-x-8 text-gray-700">
+        <li>
+          <a href="index.html"
+             class="relative inline-block py-2 font-semibold text-gray-900">
+            Home
+            <span class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-700"></span>
+          </a>
+        </li>
+        <li><a href="bookkeeping.html" class="py-2 hover:text-blue-700">Bookkeeping</a></li>
+        <li><a href="accounts-preparation.html" class="py-2 hover:text-blue-700">Accounts Prep</a></li>
+        <li><a href="payroll.html" class="py-2 hover:text-blue-700">Payroll</a></li>
+        <li><a href="Sole Trader.html" class="py-2 hover:text-blue-700">Sole Trader</a></li>
+        <li><a href="CIS.html" class="py-2 hover:text-blue-700">CIS</a></li>
+        <li><a href="VAT.html" class="py-2 hover:text-blue-700">VAT</a></li>
       </ul>
     </div>
   </nav>
@@ -31,6 +37,8 @@
   <!-- HERO SECTION -->
   <header class="relative bg-gradient-to-r from-blue-700 via-blue-500 to-blue-400 rounded-b-[70%] overflow-hidden">
     <div class="max-w-7xl mx-auto px-6 py-32 lg:py-48 flex flex-col lg:flex-row items-center">
+      
+      <!-- Left Hero Text -->
       <div class="lg:w-1/2 space-y-6 text-center lg:text-left">
         <span class="inline-block bg-blue-700 text-white uppercase text-sm font-medium px-3 py-1 rounded">
           Welcome
@@ -47,25 +55,28 @@
           Learn More
         </a>
       </div>
-      <!-- Optional image blob -->
+
+      <!-- Optional Hero Image -->
       <!--
       <div class="lg:w-1/2 mt-12 lg:mt-0 flex justify-center">
-        <div class="w-72 h-72 lg:w-96 lg:h-96 bg-white rounded-full overflow-hidden">
-          <img src="images/your-hero-image.jpg" class="w-full h-full object-cover" alt="" />
+        <div class="w-72 h-72 lg:w-96 lg:h-96 bg-white clip-blob shadow-lg overflow-hidden">
+          <img src="images/your-hero-image.jpg" class="w-full h-full object-cover" alt=""/>
         </div>
       </div>
       -->
+
     </div>
   </header>
 
   <!-- MAIN CONTENT -->
-  <main class="flex-grow max-w-7xl mx-auto px-6 py-12">
-    <!-- Your home page sections -->
+  <main class="flex-grow max-w-7xl mx-auto px-6 py-12 space-y-8">
+    <!-- Your home page sections go here -->
   </main>
 
   <!-- FOOTER -->
   <footer class="py-6 bg-gray-200 text-center text-gray-600">
     &copy; 2025 Hayes Lee Accountants
   </footer>
+
 </body>
 </html>
