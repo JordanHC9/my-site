@@ -21,8 +21,8 @@
     id="quoteModal"
     class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 fade-in"
   >
-    <!-- Modal content -->
-    <div class="bg-white rounded-xl shadow-lg w-11/12 md:w-2/3 lg:w-1/2 p-6 relative">
+    <!-- Outer grey box -->
+    <div class="bg-gray-100 rounded-xl shadow-lg w-11/12 md:w-2/3 lg:w-1/2 p-6 relative">
       <!-- Close button -->
       <button
         id="closeModal"
@@ -32,9 +32,8 @@
       <!-- Cards grid -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <!-- Sole Traders -->
-        <div class="border rounded-lg p-6 flex flex-col items-center text-center">
+        <div class="bg-white border rounded-lg p-6 flex flex-col items-center text-center">
           <div class="mb-4">
-            <!-- icon placeholder -->
             <svg class="w-12 h-12 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4..." stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -53,7 +52,7 @@
         </div>
 
         <!-- Limited Companies -->
-        <div class="border rounded-lg p-6 flex flex-col items-center text-center">
+        <div class="bg-white border rounded-lg p-6 flex flex-col items-center text-center">
           <div class="mb-4">
             <svg class="w-12 h-12 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path d="M4 7h16M4 12h16M4 17h16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -73,94 +72,5 @@
         </div>
 
         <!-- Partnerships -->
-        <div class="border rounded-lg p-6 flex flex-col items-center text-center">
-          <div class="mb-4">
-            <svg class="w-12 h-12 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path d="M12 5v14M5 12h14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <h3 class="font-semibold mb-1">Partnerships</h3>
-          <p class="text-orange-600 mb-4">From £24.50 per month</p>
-          <p class="text-gray-700 mb-6">A friendly and comprehensive accountancy service for you and your partners</p>
-          <a href="#"
-             class="mt-auto inline-flex items-center text-blue-700 font-medium hover:underline"
-          >
-            Instant Quote
-            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path d="M5 12h14M13 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- NAVIGATION -->
-  <nav class="bg-white shadow">
-    <div class="max-w-7xl mx-auto px-6 flex items-center h-20">
-      <a href="index.html" class="flex-shrink-0">
-        <img src="./images/hayes-lee-logo.svg" alt="Hayes Lee Accountants" class="h-16 w-auto"/>
-      </a>
-      <ul class="ml-auto flex space-x-8 text-gray-700">
-        <li>
-          <a href="index.html" class="relative inline-block py-2 font-semibold text-gray-900">
-            Home
-            <span class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-700"></span>
-          </a>
-        </li>
-        <li><a href="bookkeeping.html" class="py-2 hover:text-blue-700">Bookkeeping</a></li>
-        <li><a href="accounts-preparation.html" class="py-2 hover:text-blue-700">Accounts Prep</a></li>
-        <li><a href="sole-trader-tax-return.html" class="py-2 hover:text-blue-700">Sole Trader Tax</a></li>
-        <li><a href="cis.html" class="py-2 hover:text-blue-700">CIS</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- HERO SECTION -->
-  <header class="relative bg-gradient-to-r from-blue-700 via-blue-500 to-blue-400 rounded-b-[70%] overflow-hidden">
-    <div class="max-w-7xl mx-auto px-6 py-32 lg:py-48 flex flex-col lg:flex-row items-center">
-      <div class="lg:w-1/2 space-y-6 text-center lg:text-left">
-        <span class="inline-block bg-blue-700 text-white uppercase text-sm font-medium px-3 py-1 rounded">
-          Welcome
-        </span>
-        <h1 class="mt-4 text-5xl lg:text-6xl font-extrabold text-white">
-          Welcome to Hayes Lee Accountants
-        </h1>
-        <p class="mt-6 text-blue-100 max-w-lg">
-          Your home page content goes here. You can replace this paragraph with whatever intro or  
-          welcome message you had before.
-        </p>
-        <a href="#"
-           class="inline-block mt-8 bg-white text-blue-700 font-semibold px-8 py-4 rounded shadow hover:bg-gray-100">
-          Learn More
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <!-- MAIN CONTENT -->
-  <main class="flex-grow">
-    <!-- Your other sections here -->
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="py-6 bg-gray-200 text-center text-gray-600">
-    &copy; 2025 Hayes Lee Accountants
-  </footer>
-
-  <!-- Modal close script -->
-  <script>
-    const modal = document.getElementById('quoteModal');
-    const closeBtn = document.getElementById('closeModal');
-
-    // Close when clicking the X
-    closeBtn.addEventListener('click', () => modal.remove());
-
-    // Close when clicking outside the modal content
-    modal.addEventListener('click', e => {
-      if (e.target === modal) modal.remove();
-    });
-  </script>
-</body>
-</html>
+        <div
 
