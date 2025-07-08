@@ -5,15 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Payroll | Hayes Lee Accountants</title>
   <link href="output.css" rel="stylesheet">
-  <style>
-    /* if you want to reuse elsewhere */
-    .clip-blob {
-      clip-path: polygon(
-        30% 0%, 100% 0%, 100% 70%, 80% 100%,
-        50% 90%, 20% 100%, 0% 80%, 0% 30%
-      );
-    }
-  </style>
 </head>
 <body class="flex flex-col min-h-screen bg-gray-50">
 
@@ -47,7 +38,7 @@
     </div>
   </nav>
 
-  <!-- VIDEO HERO + CURVE (same as Home) -->
+  <!-- VIDEO HERO + SLANTED GREY PLATE -->
   <header class="relative overflow-hidden h-[60vh]">
     <!-- Sky Video -->
     <video
@@ -73,10 +64,10 @@
       </div>
     </div>
 
-    <!-- White curved plate -->
+    <!-- Light-grey slanted plate -->
     <div
-      class="absolute bottom-0 left-0 w-full h-60 bg-white rounded-t-[50%]"
-      style="transform: translateY(50%);"
+      class="absolute bottom-0 left-0 w-full h-40 bg-gray-100"
+      style="clip-path: polygon(0 20%, 100% 15%, 100% 100%, 0% 100%);"
     ></div>
   </header>
 
