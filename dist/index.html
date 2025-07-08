@@ -43,7 +43,7 @@
       <p class="mt-4 max-w-xl text-white">
         Your trusted partner for seamless, proactive accounting and tax services.
       </p>
-      <p class="mt-4 max-w-2xl text-gray-200">
+      <p class="mt-4 max-w-2xl text-white">
         Established in 2020, Hayes Lee Accountants is built on a wealth of expertise—our founding partner
         brings in-depth experience from a construction background, so we truly understand that industry’s
         nuances. Over the years we’ve streamlined financial processes across bookkeeping, VAT, payroll, CIS
@@ -64,24 +64,26 @@
     <!-- Enquiry Form -->
     <section id="contact-form" class="space-y-4">
       <h2 class="text-2xl font-semibold text-center">Get in Touch</h2>
-      <p class="text-center text-gray-700">Fill in the form below and we’ll get right back to you.</p>
+      <p class="text-center text-black">Fill in the form below and we’ll get right back to you.</p>
 
-      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
-            class="mx-auto max-w-xl bg-white p-8 border border-black rounded-lg space-y-4"
-            onsubmit="handleForm(event)">
+      <form name="contact"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            onsubmit="handleForm(event)"
+            class="mx-auto max-w-xl bg-white p-6 border-2 border-black rounded-lg space-y-4">
+
         <input type="hidden" name="form-name" value="contact" />
-        <p class="hidden">
-          <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
-        </p>
+        <p class="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field" /></label></p>
 
-        <label class="block">
-          <span class="text-black font-medium">Name*</span>
+        <label class="block text-black">
+          Name*
           <input type="text" name="name" required
-                 class="mt-1 block w-full border-2 border-black rounded-md px-3 py-2 focus:outline-none" />
+                 class="mt-1 block w-full border-2 border-black rounded-md px-3 py-2 focus:outline-none"/>
         </label>
 
-        <label class="block">
-          <span class="text-black font-medium">Service</span>
+        <label class="block text-black">
+          Service
           <select name="service"
                   class="mt-1 block w-full border-2 border-black rounded-md px-3 py-2 focus:outline-none">
             <option>Bookkeeping</option>
@@ -95,22 +97,22 @@
           </select>
         </label>
 
-        <label class="block">
-          <span class="text-black font-medium">Email ID*</span>
+        <label class="block text-black">
+          Email ID*
           <input type="email" name="email" required
-                 class="mt-1 block w-full border-2 border-black rounded-md px-3 py-2 focus:outline-none" />
+                 class="mt-1 block w-full border-2 border-black rounded-md px-3 py-2 focus:outline-none"/>
         </label>
 
-        <label class="block">
-          <span class="text-black font-medium">Message</span>
+        <label class="block text-black">
+          Message
           <textarea name="message" rows="4"
                     class="mt-1 block w-full border-2 border-black rounded-md px-3 py-2 focus:outline-none"></textarea>
         </label>
 
-        <label class="block">
-          <span class="text-black font-medium">Phone Number</span>
+        <label class="block text-black">
+          Phone Number
           <input type="tel" name="phone"
-                 class="mt-1 block w-full border-2 border-black rounded-md px-3 py-2 focus:outline-none" />
+                 class="mt-1 block w-full border-2 border-black rounded-md px-3 py-2 focus:outline-none"/>
         </label>
 
         <div class="text-center">
@@ -119,15 +121,12 @@
             Submit
           </button>
         </div>
+
         <div data-netlify-success class="hidden">
-          <p class="text-center text-green-600 font-semibold">
-            Thanks! Your enquiry has been received.
-          </p>
+          <p class="text-center text-green-600 font-semibold">Thanks! Your enquiry has been received.</p>
         </div>
         <div data-netlify-error class="hidden">
-          <p class="text-center text-red-600 font-semibold">
-            Oops! Something went wrong—please try again.
-          </p>
+          <p class="text-center text-red-600 font-semibold">Oops! Something went wrong—please try again.</p>
         </div>
       </form>
     </section>
@@ -139,7 +138,6 @@
     function handleForm(e) {
       e.preventDefault();
       const form = e.target;
-      // hide previous messages
       form.querySelector('[data-netlify-success]').classList.add('hidden');
       form.querySelector('[data-netlify-error]').classList.add('hidden');
       fetch('/', {
@@ -161,6 +159,6 @@
   <footer class="py-6 bg-gray-200 text-center text-gray-600">
     &copy; 2025 Hayes Lee Accountants
   </footer>
-
 </body>
 </html>
+
