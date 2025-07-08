@@ -9,7 +9,7 @@
 <body class="flex flex-col min-h-screen bg-gray-50">
 
   <!-- NAVIGATION -->
-  <nav class="bg-white shadow">
+  <nav class="bg-white shadow z-20 relative">
     <div class="max-w-7xl mx-auto px-6 flex items-center h-20">
       <!-- Logo -->
       <a href="index.html" class="flex-shrink-0">
@@ -17,14 +17,12 @@
              alt="Hayes Lee Accountants"
              class="h-16 w-auto"/>
       </a>
-
-      <!-- “Switch Accountants” standalone button -->
+      <!-- Switch Accountants button -->
       <a href="switch-accountants.html"
          class="ml-6 mr-8 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded transition">
         Switch Accountants
       </a>
-
-      <!-- Menu Links -->
+      <!-- Main Menu -->
       <ul class="ml-auto flex space-x-8 text-gray-700">
         <li>
           <a href="index.html"
@@ -33,42 +31,44 @@
             <span class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-700"></span>
           </a>
         </li>
-        <li><a href="bookkeeping.html"          class="py-2 hover:text-blue-700">Bookkeeping</a></li>
-        <li><a href="accounts-preparation.html" class="py-2 hover:text-blue-700">Accounts Prep</a></li>
-        <li><a href="payroll.html"              class="py-2 hover:text-blue-700">Payroll</a></li>
-        <li><a href="sole-trader.html"          class="py-2 hover:text-blue-700">Sole Trader</a></li>
-        <li><a href="cis.html"                  class="py-2 hover:text-blue-700">CIS</a></li>
-        <li><a href="vat.html"                  class="py-2 hover:text-blue-700">VAT</a></li>
+        <li><a href="bookkeeping.html"            class="py-2 hover:text-blue-700">Bookkeeping</a></li>
+        <li><a href="accounts-preparation.html"   class="py-2 hover:text-blue-700">Accounts Prep</a></li>
+        <li><a href="payroll.html"                class="py-2 hover:text-blue-700">Payroll</a></li>
+        <li><a href="sole-trader.html"            class="py-2 hover:text-blue-700">Sole Trader</a></li>
+        <li><a href="cis.html"                    class="py-2 hover:text-blue-700">CIS</a></li>
+        <li><a href="vat.html"                    class="py-2 hover:text-blue-700">VAT</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- VIDEO BANNER HERO (curved bottom) -->
-  <header
-    class="relative overflow-hidden h-[60vh]"
-    style="clip-path: polygon(0 0,100% 0,100% 75%,0 100%);"
-  >
+  <!-- VIDEO HERO + CURVE -->
+  <header class="relative overflow-hidden h-[60vh]">
+    <!-- Sky Video -->
     <video
       class="absolute inset-0 w-full h-full object-cover"
-      src="./Video/SKY.mp4"
+      src="Video/SKY.mp4"
       autoplay muted loop playsinline
     ></video>
+
+    <!-- Dark overlay + text -->
     <div class="relative z-10 flex items-center justify-center h-full bg-black/40">
       <div class="text-center text-white px-6">
-        <h1 class="text-4xl md:text-6xl font-extrabold">
-          Welcome to Hayes Lee Accountants
-        </h1>
+        <h1 class="text-4xl md:text-6xl font-extrabold">Welcome to Hayes Lee Accountants</h1>
         <p class="mt-4 max-w-md mx-auto">
           Your trusted partner for seamless, proactive accounting and tax services.
         </p>
-        <a
-          href="#"
-          class="mt-6 inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded shadow hover:bg-gray-100 transition"
-        >
-          Learn More
+        <a href="#enquiry"
+           class="mt-6 inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded shadow hover:bg-gray-100 transition">
+          Enquire Now
         </a>
       </div>
     </div>
+
+    <!-- White Curved Plate -->
+    <div
+      class="absolute bottom-0 left-0 w-full h-60 bg-gray-100 rounded-t-[50%]"
+      style="transform: translateY(50%);"
+    ></div>
   </header>
 
   <!-- MAIN CONTENT -->
@@ -78,24 +78,100 @@
       <p class="text-gray-700">
         From bookkeeping to VAT and payroll, discover how Hayes Lee can streamline your finances and free up your time.
       </p>
-      <!-- Add your service cards or further content here -->
+      <!-- Add service cards here -->
     </section>
   </main>
 
-  <!-- WhatsApp Chat Button -->
-  <a
-    href="https://wa.me/447515938331"
-    target="_blank"
-    class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white text-sm font-medium px-4 py-2 rounded-full shadow-lg flex items-center space-x-2 transition"
-  >
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M20.52 3.48A11.92 11.92 0 0012 0C5.37 0 0 5.37 0 12a11.9 11.9 0 001.56 6.05L0 24l6.11-1.6A11.93 11.93 0 0012 24c6.63 0 12-5.37 12-12 0-3.2-1.24-6.2-3.48-8.52zM12 21.82a9.8 9.8 0 01-5.28-1.5l-.38-.23-3.63.95.97-3.52-.25-.37A9.82 9.82 0 012.18 12c0-5.42 4.4-9.82 9.82-9.82 2.63 0 5.09 1.02 6.95 2.88a9.76 9.76 0 012.88 6.94c0 5.42-4.4 9.82-9.82 9.82zm5.36-7.76c-.29-.15-1.72-.85-1.98-.95-.27-.1-.47-.15-.67.15-.19.29-.76.95-.93 1.15-.17.19-.34.21-.63.07-.29-.15-1.22-.45-2.33-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.19 0-.51.07-.78.36s-1.02 1-1.02 2.44 1.05 2.84 1.19 3.04c.15.19 2.06 3.15 5 4.42.7.3 1.25.48 1.68.61.71.21 1.36.18 1.87.11.57-.08 1.72-.7 1.97-1.37.24-.67.24-1.25.17-1.37-.07-.12-.27-.19-.57-.34z"/>
-    </svg>
-    <span>Chat on WhatsApp</span>
-  </a>
+  <!-- ENQUIRY FORM -->
+  <section id="enquiry" class="bg-white py-16">
+    <div class="max-w-4xl mx-auto px-6">
+      <p class="text-center text-orange-600 uppercase tracking-widest font-medium mb-2">Get in touch</p>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-4">Enquiry Form</h2>
+      <p class="text-center text-gray-600 mb-10">
+        Fill in the form below and Hayes Lee Accountants will get back to you within a couple of hours.
+      </p>
+
+      <form 
+        name="enquiry" 
+        method="POST" 
+        data-netlify="true" 
+        class="grid grid-cols-1 md:grid-cols-2 gap-6"
+      >
+        <!-- Netlify hidden fields -->
+        <input type="hidden" name="form-name" value="enquiry" />
+        <p class="hidden">
+          <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+        </p>
+
+        <div>
+          <label class="block text-sm font-medium text-orange-600 mb-1" for="name">Name*</label>
+          <input 
+            id="name" name="name" required
+            type="text" 
+            placeholder="Your Name" 
+            class="w-full border border-gray-300 rounded-full px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-orange-600 mb-1" for="service">Service</label>
+          <select
+            id="service" name="service"
+            class="w-full border border-gray-300 rounded-full px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            <option>Bookkeeping</option>
+            <option>Accounts Preparation</option>
+            <option>Payroll</option>
+            <option>Sole Trader Tax Return</option>
+            <option>CIS</option>
+            <option>VAT</option>
+            <option>Switch Accountants</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-orange-600 mb-1" for="email">Email ID*</label>
+          <input 
+            id="email" name="email" required
+            type="email" 
+            placeholder="Your Email ID" 
+            class="w-full border border-gray-300 rounded-full px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+
+        <div class="md:col-span-2">
+          <label class="block text-sm font-medium text-orange-600 mb-1" for="message">Message</label>
+          <textarea
+            id="message" name="message"
+            rows="4" placeholder="Type message..."
+            class="w-full border border-gray-300 rounded-2xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          ></textarea>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-orange-600 mb-1" for="phone">Phone Number</label>
+          <input 
+            id="phone" name="phone"
+            type="tel" 
+            placeholder="Your Phone Number" 
+            class="w-full border border-gray-300 rounded-full px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+
+        <div class="md:col-span-2 text-center">
+          <button 
+            type="submit"
+            class="mt-4 inline-flex items-center bg-orange-600 text-white font-semibold px-8 py-3 rounded-full hover:bg-orange-700 transition"
+          >
+            Submit&nbsp;&rarr;
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
 
   <!-- FOOTER -->
-  <footer class="py-6 bg-gray-200 text-center text-gray-600">
+  <footer class="py-6 bg-gray-200 text-center text-gray-600 z-10">
     &copy; 2025 Hayes Lee Accountants
   </footer>
 
