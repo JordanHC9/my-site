@@ -5,28 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Home | Hayes Lee Accountants</title>
   <link href="output.css" rel="stylesheet">
-  <style>
-    /* Blob clip-path utility (if you re-use it elsewhere) */
-    .clip-blob {
-      clip-path: polygon(
-        30% 0%, 100% 0%, 100% 70%, 80% 100%,
-        50% 90%, 20% 100%, 0% 80%, 0% 30%
-      );
-    }
-  </style>
 </head>
 <body class="flex flex-col min-h-screen bg-gray-50">
 
   <!-- NAVIGATION -->
   <nav class="bg-white shadow">
     <div class="max-w-7xl mx-auto px-6 flex items-center h-20">
+
       <!-- Logo -->
       <a href="index.html" class="flex-shrink-0">
         <img src="./images/hayes-lee-logo.svg"
              alt="Hayes Lee Accountants"
              class="h-16 w-auto"/>
       </a>
-      <!-- Menu Links -->
+
+      <!-- Switch Accountants Button -->
+      <a href="switch-accountants.html"
+         class="ml-6 inline-flex items-center bg-blue-600 text-white font-semibold px-4 py-2 rounded hover:bg-blue-700">
+        Switch Accountants
+      </a>
+
+      <!-- Main Menu Links -->
       <ul class="ml-auto flex space-x-8 text-gray-700">
         <li>
           <a href="index.html"
@@ -35,47 +34,55 @@
             <span class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-700"></span>
           </a>
         </li>
-        <li><a href="bookkeeping.html"            class="py-2 hover:text-blue-700">Bookkeeping</a></li>
-        <li><a href="accounts-preparation.html"   class="py-2 hover:text-blue-700">Accounts Prep</a></li>
-        <li><a href="payroll.html"                class="py-2 hover:text-blue-700">Payroll</a></li>
-        <li><a href="sole-trader.html"            class="py-2 hover:text-blue-700">Sole Trader</a></li>
-        <li><a href="cis.html"                    class="py-2 hover:text-blue-700">CIS</a></li>
-        <li><a href="vat.html"                    class="py-2 hover:text-blue-700">VAT</a></li>
-        <li>
-          <a href="switch-accountants.html"
-             class="py-2 hover:text-blue-700">Switch Accountants</a>
-        </li>
+        <li><a href="bookkeeping.html"          class="py-2 hover:text-blue-700">Bookkeeping</a></li>
+        <li><a href="accounts-preparation.html" class="py-2 hover:text-blue-700">Accounts Prep</a></li>
+        <li><a href="payroll.html"              class="py-2 hover:text-blue-700">Payroll</a></li>
+        <li><a href="sole-trader.html"          class="py-2 hover:text-blue-700">Sole Trader</a></li>
+        <li><a href="cis.html"                  class="py-2 hover:text-blue-700">CIS</a></li>
+        <li><a href="vat.html"                  class="py-2 hover:text-blue-700">VAT</a></li>
       </ul>
+
     </div>
   </nav>
 
-  <!-- VIDEO BANNER HERO -->
-  <header class="relative overflow-hidden h-[60vh]">
-    <video
-      class="absolute top-0 left-0 w-full h-full object-cover"
-      src="Video/SKY.mp4"
-      autoplay muted loop playsinline
-    ></video>
-    <div class="relative z-10 flex items-center justify-center h-full bg-black/40">
-      <div class="text-center text-white px-6">
-        <h1 class="text-4xl md:text-6xl font-extrabold">Welcome to Hayes Lee Accountants</h1>
-        <p class="mt-4 max-w-md mx-auto">Your trusted partner for seamless, proactive accounting and tax services.</p>
+  <!-- HERO SECTION -->
+  <header class="relative bg-gradient-to-r from-blue-700 via-blue-500 to-blue-400 rounded-b-[70%] overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 py-32 lg:py-48 flex flex-col lg:flex-row items-center">
+      <!-- Left Hero Text -->
+      <div class="lg:w-1/2 space-y-6 text-center lg:text-left">
+        <span class="inline-block bg-blue-700 text-white uppercase text-sm font-medium px-3 py-1 rounded">
+          Welcome
+        </span>
+        <h1 class="mt-4 text-5xl lg:text-6xl font-extrabold text-white">
+          Welcome to Hayes Lee Accountants
+        </h1>
+        <p class="mt-6 text-blue-100 max-w-lg">
+          Your home page content goes here. You can replace this paragraph
+          with whatever intro or welcome message you had before.
+        </p>
         <a href="#"
-           class="mt-6 inline-block bg-blue-700 text-white font-semibold px-6 py-3 rounded shadow hover:bg-blue-800">
+           class="inline-block mt-8 bg-white text-blue-700 font-semibold px-8 py-4 rounded shadow hover:bg-gray-100">
           Learn More
         </a>
       </div>
+
+      <!-- Optional Right Hero Image -->
+      <!--
+      <div class="lg:w-1/2 mt-12 lg:mt-0 flex justify-center">
+        <div class="w-72 h-72 lg:w-96 lg:h-96 bg-white rounded-full overflow-hidden">
+          <img src="images/your-hero-image.jpg"
+               alt="Hero"
+               class="w-full h-full object-cover"/>
+        </div>
+      </div>
+      -->
+
     </div>
   </header>
 
   <!-- MAIN CONTENT -->
-  <main class="flex-grow max-w-7xl mx-auto px-6 py-12 space-y-12">
-    <!-- Example section -->
-    <section class="space-y-4">
-      <h2 class="text-2xl font-semibold">Our Services</h2>
-      <p class="text-gray-700">From bookkeeping to VAT and payroll, discover how Hayes Lee can streamline your finances and free up your time.</p>
-      <!-- You can add service cards here -->
-    </section>
+  <main class="flex-grow max-w-7xl mx-auto px-6 py-12 space-y-8">
+    <!-- Your home page sections go here -->
   </main>
 
   <!-- FOOTER -->
