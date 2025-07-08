@@ -9,7 +9,7 @@
 <body class="flex flex-col min-h-screen bg-gray-50">
 
   <!-- NAVIGATION -->
-  <nav class="bg-white shadow">
+  <nav class="bg-white shadow z-20 relative">
     <div class="max-w-7xl mx-auto px-6 flex items-center h-20">
       <!-- Logo -->
       <a href="index.html" class="flex-shrink-0">
@@ -18,7 +18,7 @@
              class="h-16 w-auto"/>
       </a>
 
-      <!-- “Switch Accountants” standalone button -->
+      <!-- Switch Accountants button -->
       <a href="switch-accountants.html"
          class="ml-6 mr-8 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded transition">
         Switch Accountants
@@ -43,32 +43,36 @@
     </div>
   </nav>
 
-  <!-- VIDEO BANNER HERO (curved bottom) -->
-  <header
-    class="relative overflow-hidden h-[60vh]"
-    style="clip-path: polygon(0 0,100% 0,100% 75%,0 100%);"
-  >
+  <!-- VIDEO BANNER HERO -->
+  <header class="relative overflow-hidden h-[60vh]">
+    <!-- the video -->
     <video
       class="absolute inset-0 w-full h-full object-cover"
       src="./Video/SKY.mp4"
       autoplay muted loop playsinline
     ></video>
-    <div class="relative z-10 flex items-center justify-center h-full bg-black/40">
-      <div class="text-center text-white px-6">
-        <h1 class="text-4xl md:text-6xl font-extrabold">
-          Welcome to Hayes Lee Accountants
-        </h1>
-        <p class="mt-4 max-w-md mx-auto">
-          Your trusted partner for seamless, proactive accounting and tax services.
-        </p>
-        <a
-          href="#"
-          class="mt-6 inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded shadow hover:bg-gray-100 transition"
-        >
-          Learn More
-        </a>
-      </div>
+
+    <!-- dark overlay + text -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full bg-black/40 px-6 text-center text-white">
+      <h1 class="text-4xl md:text-6xl font-extrabold">
+        Welcome to Hayes Lee Accountants
+      </h1>
+      <p class="mt-4 max-w-md">
+        Your trusted partner for seamless, proactive accounting and tax services.
+      </p>
+      <a
+        href="#"
+        class="mt-6 inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded shadow hover:bg-gray-100 transition"
+      >
+        Learn More
+      </a>
     </div>
+
+    <!-- white curved plate -->
+    <div
+      class="absolute bottom-0 left-0 w-full h-40 bg-white rounded-t-[50%]"
+      style="transform: translateY(50%);"
+    ></div>
   </header>
 
   <!-- MAIN CONTENT -->
@@ -78,7 +82,7 @@
       <p class="text-gray-700">
         From bookkeeping to VAT and payroll, discover how Hayes Lee can streamline your finances and free up your time.
       </p>
-      <!-- Add your service cards or further content here -->
+      <!-- Add your service cards here -->
     </section>
   </main>
 
