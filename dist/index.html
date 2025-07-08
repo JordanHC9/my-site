@@ -23,7 +23,7 @@
         Switch Accountants
       </a>
       <!-- Main Menu -->
-      <ul class="ml-auto flex space-x-6 text-gray-700">
+      <ul class="ml-auto flex space-x-8 text-gray-700">
         <li>
           <a href="index.html"
              class="relative inline-block py-2 font-semibold text-gray-900">
@@ -43,137 +43,150 @@
 
   <!-- VIDEO HERO + CURVE -->
   <header class="relative overflow-hidden h-[60vh]">
+    <!-- Sky Video -->
     <video
       class="absolute inset-0 w-full h-full object-cover"
       src="Video/SKY.mp4"
       autoplay muted loop playsinline
     ></video>
+
+    <!-- Dark overlay + text -->
     <div class="relative z-10 flex items-center justify-center h-full bg-black/40">
       <div class="text-center text-white px-6">
         <h1 class="text-4xl md:text-6xl font-extrabold">Welcome to Hayes Lee Accountants</h1>
         <p class="mt-4 max-w-md mx-auto">
           Your trusted partner for seamless, proactive accounting and tax services.
         </p>
-        <a href="#enquiry"
+        <a href="#contact-form"
            class="mt-6 inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded shadow hover:bg-gray-100 transition">
-          Learn More
+          Get in Touch
         </a>
       </div>
     </div>
-    <!-- White curved plate -->
+
+    <!-- Light-grey curved plate -->
     <div
-      class="absolute bottom-0 left-0 w-full h-60 bg-white rounded-t-[50%]"
+      class="absolute bottom-0 left-0 w-full h-64 bg-gray-100 rounded-t-[50%]"
       style="transform: translateY(50%);"
     ></div>
   </header>
 
   <!-- MAIN CONTENT -->
-  <main class="flex-grow max-w-4xl mx-auto px-6 py-12 space-y-16">
-    <!-- Services Section (example) -->
-    <section class="space-y-4">
-      <h2 class="text-2xl font-semibold">Our Services</h2>
-      <p class="text-gray-700">
-        From bookkeeping to VAT and payroll, discover how Hayes Lee can streamline your finances and free up your time.
+  <main class="flex-grow max-w-3xl mx-auto px-6 py-12 space-y-8">
+    <!-- About / Intro Paragraph -->
+    <section class="space-y-4 text-gray-800">
+      <p>
+        Established in 2020, Hayes Lee Accountants is built on a wealth of expertise—
+        our founding partner brings in-depth experience from a construction background,
+        so we truly understand that industry’s nuances. Over the years we’ve streamlined
+        financial processes across bookkeeping, VAT, payroll, CIS and tax returns,
+        freeing up our clients to focus on growth. We also offer a fully remote,
+        outsourced finance function, commercial project support, budgeting & forecasting
+        services—tailored to your needs.
       </p>
     </section>
 
     <!-- Enquiry Form -->
-    <section id="enquiry" class="space-y-6">
-      <h2 class="text-3xl font-bold text-center">Get in Touch</h2>
-      <p class="text-center text-gray-700">
-        Fill in the form below and we’ll get right back to you.
-      </p>
+    <section id="contact-form" class="space-y-4">
+      <h2 class="text-2xl font-semibold text-center">Get in Touch</h2>
+      <p class="text-center text-gray-700">Fill in the form below and we’ll get right back to you.</p>
 
-      <form name="enquiry" method="POST" data-netlify="true"
-            onsubmit="handleForm(event)"
-            class="mx-auto bg-white p-8 shadow rounded-lg space-y-4 max-w-xl">
-
-        <!-- Netlify hidden field -->
-        <input type="hidden" name="form-name" value="enquiry" />
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        class="space-y-4 p-6 border border-gray-300 rounded-lg"
+      >
+        <!-- hidden honeypot -->
+        <input type="hidden" name="form-name" value="contact" />
+        <p class="hidden">
+          <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+        </p>
 
         <!-- Name -->
-        <label class="block">
-          <span class="text-black font-medium">Name *</span>
-          <input type="text" name="name" required
-                 placeholder="Your Name"
-                 class="mt-1 block w-full border-2 border-black rounded-lg px-3 py-2 focus:outline-none"/>
-        </label>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Name*</label>
+          <input
+            type="text"
+            name="name"
+            required
+            class="mt-1 block w-full border border-black rounded-md px-3 py-2 focus:outline-none focus:ring-blue-500"
+          />
+        </div>
 
         <!-- Service -->
-        <label class="block">
-          <span class="text-black font-medium">Service</span>
-          <select name="service"
-                  class="mt-1 block w-full border-2 border-black rounded-lg px-3 py-2 focus:outline-none">
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Service</label>
+          <select
+            name="service"
+            class="mt-1 block w-full border border-black rounded-md px-3 py-2 focus:outline-none focus:ring-blue-500"
+          >
             <option>Bookkeeping</option>
             <option>Accounts Preparation</option>
             <option>Payroll</option>
             <option>Sole Trader Tax</option>
             <option>CIS</option>
             <option>VAT</option>
+            <option>Outsourced Finance</option>
+            <option>Project & Budgeting</option>
           </select>
-        </label>
+        </div>
 
         <!-- Email -->
-        <label class="block">
-          <span class="text-black font-medium">Email ID *</span>
-          <input type="email" name="email" required
-                 placeholder="you@example.com"
-                 class="mt-1 block w-full border-2 border-black rounded-lg px-3 py-2 focus:outline-none"/>
-        </label>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Email ID*</label>
+          <input
+            type="email"
+            name="email"
+            required
+            class="mt-1 block w-full border border-black rounded-md px-3 py-2 focus:outline-none focus:ring-blue-500"
+          />
+        </div>
 
         <!-- Message -->
-        <label class="block">
-          <span class="text-black font-medium">Message</span>
-          <textarea name="message" rows="4"
-                    placeholder="Type your message…"
-                    class="mt-1 block w-full border-2 border-black rounded-lg px-3 py-2 focus:outline-none"></textarea>
-        </label>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Message</label>
+          <textarea
+            name="message"
+            rows="4"
+            class="mt-1 block w-full border border-black rounded-md px-3 py-2 focus:outline-none focus:ring-blue-500"
+          ></textarea>
+        </div>
 
         <!-- Phone -->
-        <label class="block">
-          <span class="text-black font-medium">Phone Number</span>
-          <input type="tel" name="phone"
-                 placeholder="Your Phone Number"
-                 class="mt-1 block w-full border-2 border-black rounded-lg px-3 py-2 focus:outline-none"/>
-        </label>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Phone Number</label>
+          <input
+            type="tel"
+            name="phone"
+            class="mt-1 block w-full border border-black rounded-md px-3 py-2 focus:outline-none focus:ring-blue-500"
+          />
+        </div>
 
         <!-- Submit -->
         <div class="text-center">
-          <button type="submit"
-                  class="bg-blue-600 text-white font-semibold px-6 py-2 rounded-full hover:bg-blue-700 transition">
-            Submit →
+          <button
+            type="submit"
+            class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded transition"
+          >
+            Submit
           </button>
+        </div>
+
+        <!-- inline Netlify success -->
+        <div data-netlify-recaptcha="true"></div>
+        <div data-netlify-success>
+          <p class="mt-4 text-center text-green-600">Thanks! Your enquiry has been received.</p>
         </div>
       </form>
     </section>
   </main>
 
-  <!-- FORM HANDLER SCRIPT -->
-  <script>
-    function handleForm(e) {
-      e.preventDefault();
-      const form = e.target;
-      fetch('/', {
-        method: 'POST',
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(new FormData(form)).toString()
-      })
-      .then(() => {
-        form.innerHTML = `
-          <p class="text-center text-2xl font-bold text-blue-700">
-            Thanks for your enquiry—someone will be in touch soon!
-          </p>
-        `;
-      })
-      .catch(() => {
-        alert("Oops, something went wrong. Please try again.");
-      });
-    }
-  </script>
-
   <!-- FOOTER -->
   <footer class="py-6 bg-gray-200 text-center text-gray-600 z-10">
     &copy; 2025 Hayes Lee Accountants
   </footer>
+
 </body>
 </html>
