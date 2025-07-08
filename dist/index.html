@@ -5,19 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Home | Hayes Lee Accountants</title>
   <link href="output.css" rel="stylesheet">
+
+  <!-- Inline CSS for WhatsApp button (prevents Tailwind purge) -->
+  <style>
+    #whatsapp-btn {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      background-color: #25D366;
+      color: white;
+      padding: 0.75rem 1rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      z-index: 50;
+    }
+    #whatsapp-btn:hover {
+      background-color: #1ebe5d;
+    }
+  </style>
 </head>
 <body class="flex flex-col min-h-screen bg-gray-50">
 
   <!-- NAVIGATION -->
   <nav class="bg-white shadow">
     <div class="max-w-7xl mx-auto px-6 flex items-center h-20">
+      <!-- Logo -->
       <a href="index.html" class="flex-shrink-0">
-        <img src="./images/hayes-lee-logo.svg" alt="Hayes Lee Accountants" class="h-16 w-auto"/>
+        <img src="./images/hayes-lee-logo.svg"
+             alt="Hayes Lee Accountants"
+             class="h-16 w-auto"/>
       </a>
+
+      <!-- “Switch Accountants” standalone button -->
       <a href="switch-accountants.html"
          class="ml-6 mr-8 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded transition">
         Switch Accountants
       </a>
+
+      <!-- Menu Links -->
       <ul class="ml-auto flex space-x-8 text-gray-700">
         <li>
           <a href="index.html"
@@ -69,9 +99,9 @@
 
   <!-- WhatsApp Floating Button -->
   <a
+    id="whatsapp-btn"
     href="https://wa.me/447515938331"
     target="_blank"
-    class="fixed bottom-6 right-6 flex items-center space-x-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-4 py-3 rounded-full shadow-lg transition"
   >
     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
       <path d="M20.52 3.48A11.81 11.81 0 0012.04.2C6.25.2 1.64 4.8 1.64
