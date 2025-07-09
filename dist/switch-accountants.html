@@ -16,6 +16,10 @@
              alt="Hayes Lee Accountants"
              class="h-16 w-auto"/>
       </a>
+      <button id="openModal"
+              class="ml-6 mr-8 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded transition">
+        Switch Consultation
+      </button>
       <ul class="ml-auto flex space-x-8 text-gray-700">
         <li><a href="index.html" class="py-2 hover:text-blue-700">Home</a></li>
         <li><a href="bookkeeping.html" class="py-2 hover:text-blue-700">Bookkeeping</a></li>
@@ -35,37 +39,22 @@
     </div>
   </nav>
 
-  <!-- VIDEO HERO + CURVED PLATE -->
+  <!-- VIDEO HERO -->
   <header class="relative overflow-hidden h-[60vh]">
     <video class="absolute inset-0 w-full h-full object-cover"
            src="Video/SKY.mp4"
            autoplay muted loop playsinline></video>
-
-    <div class="relative z-10 flex flex-col items-center justify-center h-full bg-black/40 text-center px-6 space-y-4">
-      <span class="inline-block bg-blue-700 text-white uppercase text-sm font-medium px-3 py-1 rounded">
-        Switch Accountants
-      </span>
-      <h1 class="mt-4 text-5xl lg:text-6xl font-extrabold text-white">
-        Make the Move to Hayes Lee Accountants
-      </h1>
-      <p class="mt-6 text-blue-100 max-w-lg">
-        Fed up with slow responses, hidden fees, or outdated processes? Our switch-over team ensures a seamless transition of your bookkeeping and tax records, with zero downtime for your business.
-      </p>
-      <button
-        id="openModal"
-        class="mt-6 inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded shadow hover:bg-gray-100 transition">
-        Enquire Now
-      </button>
+    <div class="relative z-10 flex flex-col lg:flex-row items-center justify-center h-full bg-black/40 text-white px-6 space-y-6 lg:space-y-0 lg:space-x-12">
+      <div class="max-w-xl space-y-4 text-center lg:text-left">
+        <span class="inline-block bg-blue-700 uppercase text-sm font-medium px-3 py-1 rounded">Switch Accountants</span>
+        <h1 class="mt-2 text-5xl lg:text-6xl font-extrabold">Make the Move to Hayes Lee</h1>
+        <p class="text-blue-100">Fed up with slow responses, hidden fees, or outdated processes? Our switch-over team ensures a seamless transition of your bookkeeping and tax records, with zero downtime for your business.</p>
+      </div>
     </div>
-
-    <div class="absolute bottom-0 left-0 w-full h-56 bg-gray-100 rounded-t-[50%]"
-         style="transform: translateY(50%);"></div>
   </header>
 
   <!-- MAIN CONTENT -->
   <main class="flex-grow max-w-7xl mx-auto px-6 py-12 space-y-12">
-
-    <!-- Call-out box -->
     <div class="bg-gray-100 border border-gray-200 rounded-lg p-8">
       <h2 class="text-2xl font-semibold mb-4">Why Switch to Hayes Lee?</h2>
       <ul class="list-disc list-inside space-y-3 text-gray-700">
@@ -75,8 +64,6 @@
         <li><strong>Smooth, Zero Disruption:</strong> Our proven process means no missed deadlines or gaps in service.</li>
       </ul>
     </div>
-
-    <!-- Next steps -->
     <section class="space-y-4">
       <h2 class="text-2xl font-semibold">How It Works</h2>
       <ol class="list-decimal list-inside space-y-2 text-gray-700">
@@ -86,51 +73,77 @@
         <li>You sign off; we go live—no downtime.</li>
       </ol>
     </section>
-
   </main>
 
-  <!-- ENQUIRY MODAL (hidden by default) -->
-  <div id="modalOverlay" class="fixed inset-0 bg-black/50 hidden z-30"></div>
-  <div id="modal" class="fixed inset-0 flex items-center justify-center hidden z-40">
-    <div class="bg-white rounded-lg max-w-md w-full p-6 relative">
-      <button id="closeModal" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800">&times;</button>
-      <h3 class="text-xl font-semibold mb-4">Switch Accountants Enquiry</h3>
+  <!-- MODAL BACKDROP -->
+  <div id="modalBackdrop" class="fixed inset-0 bg-black/50 hidden z-30"></div>
 
-      <form name="switch" method="POST" data-netlify="true" netlify-honeypot="bot-field"
-            onsubmit="handleForm(event)" class="space-y-4">
-        <input type="hidden" name="form-name" value="switch" />
-        <p class="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field"></label></p>
+  <!-- CONSULTATION MODAL -->
+  <div id="modal" class="fixed inset-0 flex items-center justify-center p-6 hidden z-40">
+    <div class="bg-white rounded-lg shadow-xl max-w-md w-full overflow-hidden">
+      <div class="flex justify-between items-center px-6 py-4 border-b">
+        <h3 class="text-xl font-semibold">Switch Consultation</h3>
+        <button id="closeModal" class="text-gray-500 hover:text-gray-700">&times;</button>
+      </div>
+      <form name="consult" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+            onsubmit="handleForm(event)"
+            class="space-y-6 px-6 py-4">
+        <input type="hidden" name="form-name" value="consult" />
+        <p class="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field" /></label></p>
 
-        <label class="block text-gray-700">Name*</label>
-        <input type="text" name="name" required
-               class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none"/>
+        <div class="border border-black rounded-lg p-4">
+          <label class="block text-blue-900 font-bold mb-1">Name*</label>
+          <input type="text" name="name" required
+                 class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"/>
+        </div>
 
-        <label class="block text-gray-700">Email*</label>
-        <input type="email" name="email" required
-               class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none"/>
+        <div class="border border-black rounded-lg p-4">
+          <label class="block text-blue-900 font-bold mb-1">Service</label>
+          <select name="service"
+                  class="w-full border border-black rounded-md px-3 py-2 focus:outline-none">
+            <option>Bookkeeping</option>
+            <option>Accounts Preparation</option>
+            <option>Payroll</option>
+            <option>Sole Trader Tax</option>
+            <option>CIS</option>
+            <option>VAT</option>
+            <option>Outsourced Finance</option>
+            <option>Commercial Project Support</option>
+            <option>Budgeting &amp; Forecasting</option>
+          </select>
+        </div>
 
-        <label class="block text-gray-700">Service</label>
-        <select name="service"
-                class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none">
-          <option>Switch Consultation</option>
-          <option>Bookkeeping</option>
-          <option>VAT</option>
-          <option>Payroll</option>
-          <option>Sole Trader Tax</option>
-          <option>CIS</option>
-        </select>
+        <div class="border border-black rounded-lg p-4">
+          <label class="block text-blue-900 font-bold mb-1">Email ID*</label>
+          <input type="email" name="email" required
+                 class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"/>
+        </div>
 
-        <label class="block text-gray-700">Message</label>
-        <textarea name="message" rows="3"
-                  class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none"></textarea>
+        <div class="border border-black rounded-lg p-4">
+          <label class="block text-blue-900 font-bold mb-1">Message</label>
+          <textarea name="message" rows="4"
+                    class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"></textarea>
+        </div>
 
-        <button type="submit"
-                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded transition">
-          Submit
-        </button>
+        <div class="border border-black rounded-lg p-4">
+          <label class="block text-blue-900 font-bold mb-1">Phone Number</label>
+          <input type="tel" name="phone"
+                 class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"/>
+        </div>
 
-        <p data-netlify-success class="text-green-600 hidden">Thanks! We’ll be in touch shortly.</p>
-        <p data-netlify-error class="text-red-600 hidden">Oops—please try again.</p>
+        <div class="text-center">
+          <button type="submit"
+                  class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded transition">
+            Submit
+          </button>
+        </div>
+
+        <div data-netlify-success class="hidden">
+          <p class="text-center text-green-600 font-semibold">Thanks! We’ll be in touch shortly.</p>
+        </div>
+        <div data-netlify-error class="hidden">
+          <p class="text-center text-red-600 font-semibold">Oops! Please try again.</p>
+        </div>
       </form>
     </div>
   </div>
@@ -142,17 +155,21 @@
 
   <script>
     // Modal open/close
-    document.getElementById('openModal').addEventListener('click', () => {
-      document.getElementById('modalOverlay').classList.remove('hidden');
-      document.getElementById('modal').classList.remove('hidden');
+    const openBtn = document.getElementById('openModal');
+    const closeBtn = document.getElementById('closeModal');
+    const modal = document.getElementById('modal');
+    const backdrop = document.getElementById('modalBackdrop');
+    openBtn.addEventListener('click', ()=> {
+      modal.classList.remove('hidden');
+      backdrop.classList.remove('hidden');
     });
-    document.getElementById('closeModal').addEventListener('click', () => {
-      document.getElementById('modalOverlay').classList.add('hidden');
-      document.getElementById('modal').classList.add('hidden');
+    closeBtn.addEventListener('click', ()=> {
+      modal.classList.add('hidden');
+      backdrop.classList.add('hidden');
     });
-    document.getElementById('modalOverlay').addEventListener('click', () => {
-      document.getElementById('modalOverlay').classList.add('hidden');
-      document.getElementById('modal').classList.add('hidden');
+    backdrop.addEventListener('click', ()=> {
+      modal.classList.add('hidden');
+      backdrop.classList.add('hidden');
     });
 
     // Netlify form handler
@@ -165,6 +182,5 @@
         .catch(() => form.querySelector('[data-netlify-error]').classList.remove('hidden'));
     }
   </script>
-
 </body>
 </html>
