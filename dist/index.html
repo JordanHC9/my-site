@@ -25,7 +25,7 @@
         <li><a href="cis.html"                  class="py-2 hover:text-blue-700">CIS</a></li>
         <li><a href="vat.html"                  class="py-2 hover:text-blue-700">VAT</a></li>
       </ul>
-      <!-- Switch Accountants button, far right -->
+      <!-- Switch Accountants button top right -->
       <a href="switch-accountants.html"
          class="ml-auto bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded transition">
         Switch Accountants
@@ -80,12 +80,13 @@
         <input type="hidden" name="form-name" value="contact" />
         <p class="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field"></label></p>
 
+        <!-- Name -->
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Name*</label>
           <input type="text" name="name" required
                  class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"/>
         </div>
-
+        <!-- Service -->
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Service</label>
           <select name="service"
@@ -101,32 +102,32 @@
             <option>Budgeting &amp; Forecasting</option>
           </select>
         </div>
-
+        <!-- Email -->
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Email ID*</label>
           <input type="email" name="email" required
                  class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"/>
         </div>
-
+        <!-- Message -->
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Message</label>
           <textarea name="message" rows="4"
                     class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"></textarea>
         </div>
-
+        <!-- Phone -->
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Phone Number</label>
           <input type="tel" name="phone"
                  class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"/>
         </div>
-
+        <!-- Submit -->
         <div class="text-center">
           <button type="submit"
                   class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded transition">
             Submit
           </button>
         </div>
-
+        <!-- Netlify status -->
         <div data-netlify-success class="hidden">
           <p class="text-center text-green-600 font-semibold">Thanks! Your enquiry has been received.</p>
         </div>
@@ -152,5 +153,6 @@
         .catch(() => form.querySelector('[data-netlify-error]').classList.remove('hidden'));
     }
   </script>
+
 </body>
 </html>
