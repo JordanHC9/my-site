@@ -34,13 +34,12 @@
 
   <!-- VIDEO HERO + HEADER LOGO + CURVED PLATE -->
   <header class="relative overflow-hidden h-[60vh]">
-    <!-- Hero video -->
     <video class="absolute inset-0 w-full h-full object-cover"
            src="Video/SKY.mp4"
            autoplay muted loop playsinline></video>
 
-    <!-- Overlapping logo top-left -->
-    <div class="absolute top-4 left-4 z-30">
+    <!-- Logo overlapping top-left, pushed further right -->
+    <div class="absolute top-4 right-8 z-30">
       <a href="index.html">
         <img src="./images/hayes-lee-logo.svg"
              alt="Hayes Lee Accountants"
@@ -48,9 +47,9 @@
       </a>
     </div>
 
-    <!-- Dark overlay + text -->
+    <!-- Overlay text -->
     <div class="relative z-20 flex flex-col items-center justify-center h-full bg-black/40 text-center px-6 space-y-6">
-      <h1 class="text-8xl font-normal text-white">Welcome to Hayes Lee Accountants</h1>
+      <h1 class="text-7xl font-normal text-white">Welcome to Hayes Lee Accountants</h1>
       <p class="max-w-2xl text-2xl text-white">
         Your trusted partner for seamless, proactive accounting and tax services.
       </p>
@@ -63,7 +62,7 @@
       </a>
     </div>
 
-    <!-- Curved plate -->
+    <!-- Curved white plate -->
     <div class="absolute bottom-0 left-0 w-full h-56 bg-gray-100 rounded-t-[50%]"
          style="transform: translateY(50%);"></div>
   </header>
@@ -85,7 +84,6 @@
           <input type="text" name="name" required
                  class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"/>
         </div>
-
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Service</label>
           <select name="service"
@@ -101,32 +99,27 @@
             <option>Budgeting &amp; Forecasting</option>
           </select>
         </div>
-
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Email ID*</label>
           <input type="email" name="email" required
                  class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"/>
         </div>
-
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Message</label>
           <textarea name="message" rows="4"
                     class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"></textarea>
         </div>
-
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Phone Number</label>
           <input type="tel" name="phone"
                  class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"/>
         </div>
-
         <div class="text-center">
           <button type="submit"
                   class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded transition">
             Submit
           </button>
         </div>
-
         <div data-netlify-success class="hidden">
           <p class="text-center text-green-600 font-semibold">Thanks! Your enquiry has been received.</p>
         </div>
