@@ -35,11 +35,9 @@
 
   <!-- VIDEO HERO + CURVE -->
   <header class="relative overflow-hidden h-[60vh]">
-    <!-- Sky Video -->
     <video class="absolute inset-0 w-full h-full object-cover"
-           src="Video/SKY.mp4" autoplay muted loop playsinline></video>
-
-    <!-- Overlay -->
+           src="Video/SKY.mp4"
+           autoplay muted loop playsinline></video>
     <div class="relative z-10 flex flex-col items-center justify-center h-full bg-black/40 px-6 text-center">
       <h1 class="text-4xl md:text-6xl font-extrabold text-white">Welcome to Hayes Lee Accountants</h1>
       <p class="mt-4 max-w-xl text-white">
@@ -57,8 +55,6 @@
         Get in Touch
       </a>
     </div>
-
-    <!-- Curved plate -->
     <div class="absolute bottom-0 left-0 w-full h-64 bg-gray-100 rounded-t-[50%]" style="transform: translateY(50%);"></div>
   </header>
 
@@ -70,7 +66,10 @@
       <h2 class="text-2xl font-semibold text-center">Get in Touch</h2>
       <p class="text-center text-black">Fill in the form below and we’ll get right back to you.</p>
 
-      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+      <form name="contact"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
             onsubmit="handleForm(event)"
             class="mx-auto max-w-xl bg-white p-6 border-2 border-black rounded-lg space-y-4">
 
@@ -134,7 +133,7 @@
 
   </main>
 
-  <!-- FORM SCRIPT -->
+  <!-- FORM HANDLER SCRIPT -->
   <script>
     function handleForm(e) {
       e.preventDefault();
@@ -143,14 +142,14 @@
       form.querySelector('[data-netlify-error]').classList.add('hidden');
       fetch('/', {
         method: 'POST',
-        headers: { "Content-Type":"application/x-www-form-urlencoded" },
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(new FormData(form)).toString()
       })
-      .then(()=> {
+      .then(() => {
         form.querySelector('[data-netlify-success]').classList.remove('hidden');
         form.reset();
       })
-      .catch(()=> {
+      .catch(() => {
         form.querySelector('[data-netlify-error]').classList.remove('hidden');
       });
     }
@@ -160,6 +159,5 @@
   <footer class="py-6 bg-gray-200 text-center text-gray-600">
     &copy; 2025 Hayes Lee Accountants
   </footer>
-  
 </body>
 </html>
