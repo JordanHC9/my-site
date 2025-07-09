@@ -12,9 +12,7 @@
   <nav class="bg-white shadow z-20 relative">
     <div class="max-w-7xl mx-auto px-6 flex items-center h-20">
       <a href="index.html" class="flex-shrink-0">
-        <img src="./images/hayes-lee-logo.svg"
-             alt="Hayes Lee Accountants"
-             class="h-16 w-auto"/>
+        <img src="./images/hayes-lee-logo.svg" alt="Hayes Lee Accountants" class="h-16 w-auto"/>
       </a>
       <a href="switch-accountants.html"
          class="ml-6 mr-8 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded transition">
@@ -22,78 +20,113 @@
       </a>
       <ul class="ml-auto flex space-x-8 text-gray-700">
         <li>
-          <a href="index.html"
-             class="relative inline-block py-2 font-semibold text-gray-900">
+          <a href="index.html" class="relative inline-block py-2 text-gray-900">
             Home
             <span class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-700"></span>
           </a>
         </li>
-        <li><a href="bookkeeping.html"            class="py-2 hover:text-blue-700">Bookkeeping</a></li>
-        <li><a href="accounts-preparation.html"   class="py-2 hover:text-blue-700">Accounts Prep</a></li>
-        <li><a href="payroll.html"                class="py-2 hover:text-blue-700">Payroll</a></li>
-        <li><a href="sole-trader.html"            class="py-2 hover:text-blue-700">Sole Trader</a></li>
-        <li><a href="cis.html"                    class="py-2 hover:text-blue-700">CIS</a></li>
-        <li><a href="vat.html"                    class="py-2 hover:text-blue-700">VAT</a></li>
+        <li><a href="bookkeeping.html"          class="py-2 hover:text-blue-700">Bookkeeping</a></li>
+        <li><a href="accounts-preparation.html" class="py-2 hover:text-blue-700">Accounts Prep</a></li>
+        <li><a href="payroll.html"              class="py-2 hover:text-blue-700">Payroll</a></li>
+        <li><a href="sole-trader.html"          class="py-2 hover:text-blue-700">Sole Trader</a></li>
+        <li><a href="cis.html"                  class="py-2 hover:text-blue-700">CIS</a></li>
+        <li><a href="vat.html"                  class="py-2 hover:text-blue-700">VAT</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- VIDEO HERO + CURVE -->
   <header class="relative overflow-hidden h-[60vh]">
-    <video
-      class="absolute inset-0 w-full h-full object-cover"
-      src="Video/SKY.mp4"
-      autoplay muted loop playsinline
-    ></video>
-    <div class="relative z-10 flex flex-col items-center justify-center h-full bg-black/40 text-center px-6">
-      <p class="text-white mb-4">Established in 2020, Hayes Lee Accountants is built on a wealth of expertise—our founding partner brings in-depth experience from a construction background, so we truly understand that industry’s nuances. Over the years we’ve streamlined financial processes across bookkeeping, VAT, payroll, CIS and tax returns. We also offer a fully remote, outsourced finance function, commercial project support, budgeting & forecasting services—tailored to your needs.</p>
-      <h1 class="text-white text-9xl font-extrabold">Welcome to Hayes Lee Accountants</h1>
-      <p class="text-white mt-4 max-w-lg">Your trusted partner for seamless, proactive accounting and tax services.</p>
-      <a href="#enquiry"
-         class="mt-6 inline-block bg-blue-700 text-white font-semibold px-6 py-3 rounded shadow hover:bg-blue-800 transition">
+    <video class="absolute inset-0 w-full h-full object-cover"
+           src="Video/SKY.mp4"
+           autoplay muted loop playsinline></video>
+
+    <div class="relative z-10 flex flex-col items-center justify-center h-full bg-black/40 text-center px-6 space-y-4">
+      <h1 class="text-9xl font-normal text-white">Welcome to Hayes Lee Accountants</h1>
+      <p class="max-w-lg text-white">
+        Your trusted partner for seamless, proactive accounting and tax services.
+      </p>
+      <p class="max-w-lg text-white">
+        Established in 2020, Hayes Lee Accountants is built on a wealth of expertise—our founding partner brings in-depth experience from a construction background, so we truly understand that industry’s nuances. Over the years we’ve streamlined financial processes across bookkeeping, VAT, payroll, CIS and tax returns, freeing up our clients to focus on growth. We also offer a fully remote, outsourced finance function, commercial project support, budgeting & forecasting services—tailored to your needs.
+      </p>
+      <a href="#contact-form"
+         class="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded shadow transition">
         Get in Touch
       </a>
     </div>
-    <div
-      class="absolute bottom-0 left-0 w-full h-60 bg-white rounded-t-[50%]"
-      style="transform: translateY(50%);"
-    ></div>
+
+    <div class="absolute bottom-0 left-0 w-full h-56 bg-gray-100 rounded-t-[50%]"
+         style="transform: translateY(50%);"></div>
   </header>
 
   <!-- ENQUIRY FORM -->
-  <main id="enquiry" class="flex-grow flex items-center justify-center py-12 bg-gray-50">
-    <form class="w-full max-w-md bg-white p-6 rounded-lg shadow-lg space-y-4">
-      <div>
-        <label class="block text-blue-900 font-bold mb-1">Name*</label>
-        <input type="text" placeholder="Your Name" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none"/>
-      </div>
-      <div>
-        <label class="block text-blue-900 font-bold mb-1">Service</label>
-        <select class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none">
-          <option>Bookkeeping</option>
-          <option>Accounts Prep</option>
-          <option>Payroll</option>
-          <option>Sole Trader</option>
-          <option>CIS</option>
-          <option>VAT</option>
-        </select>
-      </div>
-      <div>
-        <label class="block text-blue-900 font-bold mb-1">Email ID*</label>
-        <input type="email" placeholder="Your Email ID" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none"/>
-      </div>
-      <div>
-        <label class="block text-blue-900 font-bold mb-1">Message</label>
-        <textarea rows="4" placeholder="Type message…" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none"></textarea>
-      </div>
-      <div>
-        <label class="block text-blue-900 font-bold mb-1">Phone Number</label>
-        <input type="tel" placeholder="Your Phone Number" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none"/>
-      </div>
-      <button type="submit" class="w-full bg-blue-700 text-white font-semibold py-2 rounded hover:bg-blue-800 transition">
-        Submit
-      </button>
-    </form>
+  <main class="flex-grow">
+    <section id="contact-form" class="py-12">
+      <h2 class="text-2xl font-semibold text-center mb-2">Get in Touch</h2>
+      <p class="text-center mb-6">Fill in the form below and we’ll get right back to you.</p>
+
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+            onsubmit="handleForm(event)"
+            class="mx-auto w-full max-w-md space-y-6">
+
+        <input type="hidden" name="form-name" value="contact" />
+        <p class="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field"></label></p>
+
+        <div class="border border-black rounded-lg p-4">
+          <label class="block text-blue-900 font-bold mb-1">Name*</label>
+          <input type="text" name="name" required
+                 class="w-full border-none rounded-md px-3 py-2 focus:outline-none"/>
+        </div>
+
+        <div class="border border-black rounded-lg p-4">
+          <label class="block text-blue-900 font-bold mb-1">Service</label>
+          <select name="service"
+                  class="w-full border-none rounded-md px-3 py-2 focus:outline-none">
+            <option>Bookkeeping</option>
+            <option>Accounts Preparation</option>
+            <option>Payroll</option>
+            <option>Sole Trader Tax</option>
+            <option>CIS</option>
+            <option>VAT</option>
+            <option>Outsourced Finance</option>
+            <option>Commercial Project Support</option>
+            <option>Budgeting &amp; Forecasting</option>
+          </select>
+        </div>
+
+        <div class="border border-black rounded-lg p-4">
+          <label class="block text-blue-900 font-bold mb-1">Email ID*</label>
+          <input type="email" name="email" required
+                 class="w-full border-none rounded-md px-3 py-2 focus:outline-none"/>
+        </div>
+
+        <div class="border border-black rounded-lg p-4">
+          <label class="block text-blue-900 font-bold mb-1">Message</label>
+          <textarea name="message" rows="4"
+                    class="w-full border-none rounded-md px-3 py-2 focus:outline-none"></textarea>
+        </div>
+
+        <div class="border border-black rounded-lg p-4">
+          <label class="block text-blue-900 font-bold mb-1">Phone Number</label>
+          <input type="tel" name="phone"
+                 class="w-full border-none rounded-md px-3 py-2 focus:outline-none"/>
+        </div>
+
+        <div class="text-center">
+          <button type="submit"
+                  class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded transition">
+            Submit
+          </button>
+        </div>
+
+        <div data-netlify-success class="hidden">
+          <p class="text-center text-green-600 font-semibold">Thanks! Your enquiry has been received.</p>
+        </div>
+        <div data-netlify-error class="hidden">
+          <p class="text-center text-red-600 font-semibold">Oops! Please try again.</p>
+        </div>
+      </form>
+    </section>
   </main>
 
   <!-- FOOTER -->
@@ -101,5 +134,15 @@
     &copy; 2025 Hayes Lee Accountants
   </footer>
 
+  <script>
+    function handleForm(e) {
+      e.preventDefault();
+      const form = e.target;
+      const data = new FormData(form);
+      fetch("/", { method: "POST", body: data })
+        .then(() => form.querySelector('[data-netlify-success]').classList.remove('hidden'))
+        .catch(() => form.querySelector('[data-netlify-error]').classList.remove('hidden'));
+    }
+  </script>
 </body>
 </html>
