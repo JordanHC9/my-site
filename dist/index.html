@@ -35,7 +35,7 @@
     </div>
   </nav>
 
-  <!-- VIDEO HERO + CURVED PLATE -->
+  <!-- VIDEO HERO + CURVE -->
   <header class="relative overflow-hidden h-[60vh]">
     <video class="absolute inset-0 w-full h-full object-cover"
            src="Video/SKY.mp4"
@@ -47,7 +47,7 @@
         Your trusted partner for seamless, proactive accounting and tax services.
       </p>
       <p class="max-w-lg text-white">
-        Established in 2020, Hayes Lee Accountants is built on a wealth of expertise—our founding partner brings in-depth experience from a construction background, so we truly understand that industry’s nuances. Over the years we’ve streamlined financial processes across bookkeeping, VAT, payroll, CIS and tax returns, freeing up our clients to focus on growth. We also offer a fully remote, outsourced finance function, commercial project support, budgeting &amp; forecasting services—tailored to your needs.
+        Established in 2020, Hayes Lee Accountants is built on a wealth of expertise—our founding partner brings in-depth experience from a construction background, so we truly understand that industry’s nuances. Over the years we’ve streamlined financial processes across bookkeeping, VAT, payroll, CIS and tax returns, freeing up our clients to focus on growth. We also offer a fully remote, outsourced finance function, commercial project support, budgeting & forecasting services—tailored to your needs.
       </p>
       <a href="#contact-form"
          class="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded shadow transition">
@@ -75,13 +75,13 @@
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Name*</label>
           <input type="text" name="name" required
-                 class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"/>
+                 class="w-full border-none rounded-md px-3 py-2 focus:outline-none"/>
         </div>
 
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Service</label>
           <select name="service"
-                  class="w-full border border-black rounded-md px-3 py-2 focus:outline-none">
+                  class="w-full border-none rounded-md px-3 py-2 focus:outline-none">
             <option>Bookkeeping</option>
             <option>Accounts Preparation</option>
             <option>Payroll</option>
@@ -97,19 +97,19 @@
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Email ID*</label>
           <input type="email" name="email" required
-                 class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"/>
+                 class="w-full border-none rounded-md px-3 py-2 focus:outline-none"/>
         </div>
 
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Message</label>
           <textarea name="message" rows="4"
-                    class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"></textarea>
+                    class="w-full border-none rounded-md px-3 py-2 focus:outline-none"></textarea>
         </div>
 
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Phone Number</label>
           <input type="tel" name="phone"
-                 class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"/>
+                 class="w-full border-none rounded-md px-3 py-2 focus:outline-none"/>
         </div>
 
         <div class="text-center">
@@ -123,7 +123,7 @@
           <p class="text-center text-green-600 font-semibold">Thanks! Your enquiry has been received.</p>
         </div>
         <div data-netlify-error class="hidden">
-          <p class="text-center text-red-600 font-semibold">Oops! Something went wrong—please try again.</p>
+          <p class="text-center text-red-600 font-semibold">Oops! Please try again.</p>
         </div>
       </form>
     </section>
@@ -141,7 +141,7 @@
       const data = new FormData(form);
       fetch("/", { method: "POST", body: data })
         .then(() => form.querySelector('[data-netlify-success]').classList.remove('hidden'))
-        .catch(()  => form.querySelector('[data-netlify-error]').classList.remove('hidden'));
+        .catch(() => form.querySelector('[data-netlify-error]').classList.remove('hidden'));
     }
   </script>
 </body>
