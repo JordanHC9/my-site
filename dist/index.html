@@ -8,14 +8,10 @@
 </head>
 <body class="flex flex-col min-h-screen bg-gray-50">
 
-  <!-- NAVIGATION (logo moved into header) -->
+  <!-- NAVIGATION -->
   <nav class="bg-white shadow z-20 relative">
     <div class="max-w-7xl mx-auto px-6 flex items-center h-20">
-      <a href="switch-accountants.html"
-         class="ml-auto bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded transition">
-        Switch Accountants
-      </a>
-      <ul class="ml-6 flex space-x-8 text-gray-700">
+      <ul class="ml-auto flex space-x-8 text-gray-700">
         <li>
           <a href="index.html" class="relative inline-block py-2 text-gray-900">
             Home
@@ -29,6 +25,10 @@
         <li><a href="cis.html"                  class="py-2 hover:text-blue-700">CIS</a></li>
         <li><a href="vat.html"                  class="py-2 hover:text-blue-700">VAT</a></li>
       </ul>
+      <a href="switch-accountants.html"
+         class="ml-8 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded transition">
+        Switch Accountants
+      </a>
     </div>
   </nav>
 
@@ -39,10 +39,12 @@
            src="Video/SKY.mp4"
            autoplay muted loop playsinline></video>
 
-    <!-- Overlapping logo top-right -->
-    <div class="absolute top-4 right-4 z-30">
+    <!-- Overlapping logo top-left -->
+    <div class="absolute top-4 left-4 z-30">
       <a href="index.html">
-        <img src="./images/hayes-lee-logo.svg" alt="Hayes Lee Accountants" class="h-24 w-auto"/>
+        <img src="./images/hayes-lee-logo.svg"
+             alt="Hayes Lee Accountants"
+             class="h-32 w-auto drop-shadow-lg"/>
       </a>
     </div>
 
@@ -75,7 +77,6 @@
       <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
             onsubmit="handleForm(event)"
             class="mx-auto w-full max-w-md space-y-6">
-
         <input type="hidden" name="form-name" value="contact" />
         <p class="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field"></label></p>
 
