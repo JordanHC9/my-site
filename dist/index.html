@@ -8,19 +8,14 @@
 </head>
 <body class="flex flex-col min-h-screen bg-gray-50">
 
-  <!-- NAVIGATION -->
+  <!-- NAVIGATION (logo moved into header) -->
   <nav class="bg-white shadow z-20 relative">
     <div class="max-w-7xl mx-auto px-6 flex items-center h-20">
-      <a href="index.html" class="flex-shrink-0">
-        <img src="./images/hayes-lee-logo.svg"
-             alt="Hayes Lee Accountants"
-             class="h-24 w-auto"/>
-      </a>
       <a href="switch-accountants.html"
-         class="ml-6 mr-8 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded transition">
+         class="ml-auto bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded transition">
         Switch Accountants
       </a>
-      <ul class="ml-auto flex space-x-8 text-gray-700">
+      <ul class="ml-6 flex space-x-8 text-gray-700">
         <li>
           <a href="index.html" class="relative inline-block py-2 text-gray-900">
             Home
@@ -37,14 +32,23 @@
     </div>
   </nav>
 
-  <!-- VIDEO HERO + CURVED PLATE -->
+  <!-- VIDEO HERO + HEADER LOGO + CURVED PLATE -->
   <header class="relative overflow-hidden h-[60vh]">
+    <!-- Hero video -->
     <video class="absolute inset-0 w-full h-full object-cover"
            src="Video/SKY.mp4"
            autoplay muted loop playsinline></video>
 
-    <div class="relative z-10 flex flex-col items-center justify-center h-full bg-black/40 text-center px-6 space-y-6">
-      <h1 class="text-7xl font-normal text-white">Welcome to Hayes Lee Accountants</h1>
+    <!-- Overlapping logo top-right -->
+    <div class="absolute top-4 right-4 z-30">
+      <a href="index.html">
+        <img src="./images/hayes-lee-logo.svg" alt="Hayes Lee Accountants" class="h-24 w-auto"/>
+      </a>
+    </div>
+
+    <!-- Dark overlay + text -->
+    <div class="relative z-20 flex flex-col items-center justify-center h-full bg-black/40 text-center px-6 space-y-6">
+      <h1 class="text-8xl font-normal text-white">Welcome to Hayes Lee Accountants</h1>
       <p class="max-w-2xl text-2xl text-white">
         Your trusted partner for seamless, proactive accounting and tax services.
       </p>
@@ -57,6 +61,7 @@
       </a>
     </div>
 
+    <!-- Curved plate -->
     <div class="absolute bottom-0 left-0 w-full h-56 bg-gray-100 rounded-t-[50%]"
          style="transform: translateY(50%);"></div>
   </header>
