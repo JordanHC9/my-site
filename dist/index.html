@@ -20,18 +20,17 @@
       </a>
       <ul class="ml-auto flex space-x-8 text-gray-700">
         <li>
-          <a href="index.html"
-             class="relative inline-block py-2 text-gray-900">
+          <a href="index.html" class="relative inline-block py-2 text-gray-900">
             Home
             <span class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-700"></span>
           </a>
         </li>
-        <li><a href="bookkeeping.html"            class="py-2 hover:text-blue-700">Bookkeeping</a></li>
-        <li><a href="accounts-preparation.html"   class="py-2 hover:text-blue-700">Accounts Prep</a></li>
-        <li><a href="payroll.html"                class="py-2 hover:text-blue-700">Payroll</a></li>
-        <li><a href="sole-trader.html"            class="py-2 hover:text-blue-700">Sole Trader</a></li>
-        <li><a href="cis.html"                    class="py-2 hover:text-blue-700">CIS</a></li>
-        <li><a href="vat.html"                    class="py-2 hover:text-blue-700">VAT</a></li>
+        <li><a href="bookkeeping.html"          class="py-2 hover:text-blue-700">Bookkeeping</a></li>
+        <li><a href="accounts-preparation.html" class="py-2 hover:text-blue-700">Accounts Prep</a></li>
+        <li><a href="payroll.html"              class="py-2 hover:text-blue-700">Payroll</a></li>
+        <li><a href="sole-trader.html"          class="py-2 hover:text-blue-700">Sole Trader</a></li>
+        <li><a href="cis.html"                  class="py-2 hover:text-blue-700">CIS</a></li>
+        <li><a href="vat.html"                  class="py-2 hover:text-blue-700">VAT</a></li>
       </ul>
     </div>
   </nav>
@@ -43,7 +42,7 @@
            autoplay muted loop playsinline></video>
 
     <div class="relative z-10 flex flex-col items-center justify-center h-full bg-black/40 text-center px-6 space-y-4">
-      <h1 class="text-7xl font-normal text-white">Welcome to Hayes Lee Accountants</h1>
+      <h1 class="text-9xl font-normal text-white">Welcome to Hayes Lee Accountants</h1>
       <p class="max-w-lg text-white">
         Your trusted partner for seamless, proactive accounting and tax services.
       </p>
@@ -68,21 +67,19 @@
 
       <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
             onsubmit="handleForm(event)"
-            class="mx-auto max-w-lg space-y-6">
+            class="mx-auto w-full max-w-md space-y-6">
 
-        <!-- Netlify hidden fields -->
         <input type="hidden" name="form-name" value="contact" />
         <p class="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field"></label></p>
 
-        <!-- Each question in its own rounded square -->
         <div class="border border-black rounded-lg p-4">
-          <label class="block text-black mb-1">Name*</label>
+          <label class="block text-blue-900 font-bold mb-1">Name*</label>
           <input type="text" name="name" required
                  class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"/>
         </div>
 
         <div class="border border-black rounded-lg p-4">
-          <label class="block text-black mb-1">Service</label>
+          <label class="block text-blue-900 font-bold mb-1">Service</label>
           <select name="service"
                   class="w-full border border-black rounded-md px-3 py-2 focus:outline-none">
             <option>Bookkeeping</option>
@@ -92,24 +89,25 @@
             <option>CIS</option>
             <option>VAT</option>
             <option>Outsourced Finance</option>
-            <option>Project &amp; Budgeting</option>
+            <option>Commercial Project Support</option>
+            <option>Budgeting &amp; Forecasting</option>
           </select>
         </div>
 
         <div class="border border-black rounded-lg p-4">
-          <label class="block text-black mb-1">Email ID*</label>
+          <label class="block text-blue-900 font-bold mb-1">Email ID*</label>
           <input type="email" name="email" required
                  class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"/>
         </div>
 
         <div class="border border-black rounded-lg p-4">
-          <label class="block text-black mb-1">Message</label>
+          <label class="block text-blue-900 font-bold mb-1">Message</label>
           <textarea name="message" rows="4"
                     class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"></textarea>
         </div>
 
         <div class="border border-black rounded-lg p-4">
-          <label class="block text-black mb-1">Phone Number</label>
+          <label class="block text-blue-900 font-bold mb-1">Phone Number</label>
           <input type="tel" name="phone"
                  class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"/>
         </div>
@@ -121,7 +119,6 @@
           </button>
         </div>
 
-        <!-- Inline Netlify messages -->
         <div data-netlify-success class="hidden">
           <p class="text-center text-green-600 font-semibold">Thanks! Your enquiry has been received.</p>
         </div>
