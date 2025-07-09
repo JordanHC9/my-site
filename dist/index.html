@@ -12,7 +12,7 @@
   <nav class="bg-white shadow z-20 relative">
     <div class="max-w-7xl mx-auto px-6 flex items-center h-20">
       <a href="index.html" class="flex-shrink-0">
-        <img src="./images/hayes-lee-logo.svg" alt="Hayes Lee Accountants" class="h-16 w-auto"/>
+        <img src="./images/hayes-lee-logo.svg" alt="Hayes Lee Accountants" class="h-20 w-auto"/>
       </a>
       <a href="switch-accountants.html"
          class="ml-6 mr-8 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded transition">
@@ -41,22 +41,29 @@
            src="Video/SKY.mp4"
            autoplay muted loop playsinline></video>
 
-    <div class="relative z-10 flex flex-col items-center justify-center h-full bg-black/40 text-center px-6 space-y-4">
-      <h1 class="text-[8rem] font-normal leading-tight text-white">Welcome to Hayes Lee Accountants</h1>
+    <div
+      class="relative z-10 flex flex-col items-center justify-center h-full bg-black/40 text-center px-6 space-y-4"
+    >
+      <h1 class="text-12xl font-normal text-white">Welcome to Hayes Lee Accountants</h1>
+
       <p class="max-w-lg text-white">
         Your trusted partner for seamless, proactive accounting and tax services.
       </p>
+
       <p class="max-w-lg text-white">
-        Established in 2020, Hayes Lee Accountants is built on a wealth of expertise—our founding partner brings in-depth experience from a construction background… (rest of text)
+        Established in 2020, Hayes Lee Accountants is built on a wealth of expertise—our founding partner brings in-depth experience from a construction background, so we truly understand that industry’s nuances. Over the years we’ve streamlined financial processes across bookkeeping, VAT, payroll, CIS and tax returns, freeing up our clients to focus on growth. We also offer a fully remote, outsourced finance function, commercial project support, budgeting & forecasting services—tailored to your needs.
       </p>
+
       <a href="#contact-form"
          class="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded shadow transition">
         Get in Touch
       </a>
     </div>
 
-    <div class="absolute bottom-0 left-0 w-full h-56 bg-gray-100 rounded-t-[50%]"
-         style="transform: translateY(50%);"></div>
+    <div
+      class="absolute bottom-0 left-0 w-full h-56 bg-gray-100 rounded-t-[50%]"
+      style="transform: translateY(50%);"
+    ></div>
   </header>
 
   <!-- ENQUIRY FORM -->
@@ -72,15 +79,16 @@
         <input type="hidden" name="form-name" value="contact" />
         <p class="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field"></label></p>
 
-        <div class="rounded-xl border border-black p-4">
-          <label class="block text-blue-900 mb-1">Name*</label>
+        <div class="border border-black rounded-lg p-4">
+          <label class="block text-blue-900 font-bold mb-1">Name*</label>
           <input type="text" name="name" required
-                 class="w-full rounded-lg border border-black px-3 py-2 focus:outline-none"/>
+                 class="w-full border-black rounded-md px-3 py-2 focus:outline-none"/>
         </div>
 
-        <div class="rounded-xl border border-black p-4">
-          <label class="block text-blue-900 mb-1">Service</label>
-          <select name="service" class="w-full rounded-lg border border-black px-3 py-2 focus:outline-none">
+        <div class="border border-black rounded-lg p-4">
+          <label class="block text-blue-900 font-bold mb-1">Service</label>
+          <select name="service"
+                  class="w-full border-black rounded-md px-3 py-2 focus:outline-none">
             <option>Bookkeeping</option>
             <option>Accounts Preparation</option>
             <option>Payroll</option>
@@ -93,28 +101,28 @@
           </select>
         </div>
 
-        <div class="rounded-xl border border-black p-4">
-          <label class="block text-blue-900 mb-1">Email ID*</label>
+        <div class="border border-black rounded-lg p-4">
+          <label class="block text-blue-900 font-bold mb-1">Email ID*</label>
           <input type="email" name="email" required
-                 class="w-full rounded-lg border border-black px-3 py-2 focus:outline-none"/>
+                 class="w-full border-black rounded-md px-3 py-2 focus:outline-none"/>
         </div>
 
-        <div class="rounded-xl border border-black p-4">
-          <label class="block text-blue-900 mb-1">Message</label>
+        <div class="border border-black rounded-lg p-4">
+          <label class="block text-blue-900 font-bold mb-1">Message</label>
           <textarea name="message" rows="4"
-                    class="w-full rounded-lg border border-black px-3 py-2 focus:outline-none"></textarea>
+                    class="w-full border-black rounded-md px-3 py-2 focus:outline-none"></textarea>
         </div>
 
-        <div class="rounded-xl border border-black p-4">
-          <label class="block text-blue-900 mb-1">Phone Number</label>
+        <div class="border border-black rounded-lg p-4">
+          <label class="block text-blue-900 font-bold mb-1">Phone Number</label>
           <input type="tel" name="phone"
-                 class="w-full rounded-lg border border-black px-3 py-2 focus:outline-none"/>
+                 class="w-full border-black rounded-md px-3 py-2 focus:outline-none"/>
         </div>
 
         <div class="text-center">
           <button type="submit"
-                  class="bg-orange-600 hover:bg-orange-700 text-white font-semibold px-6 py-2 rounded transition">
-            Submit &rarr;
+                  class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded transition">
+            Submit
           </button>
         </div>
 
