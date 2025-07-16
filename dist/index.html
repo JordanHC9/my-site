@@ -10,73 +10,73 @@
 
   <!-- NAVIGATION -->
   <nav class="bg-white shadow z-20 relative">
-    <div class="max-w-7xl mx-auto px-6 flex items-center h-20">
-      <!-- Main Menu -->
-      <ul class="flex space-x-8 text-gray-700">
-        <li><a href="index.html" class="relative inline-block py-2 text-gray-900">
-            Home
-            <span class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-700"></span>
-          </a>
-        </li>
-        <li><a href="bookkeeping.html"          class="py-2 hover:text-blue-700">Bookkeeping</a></li>
-        <li><a href="accounts-preparation.html" class="py-2 hover:text-blue-700">Accounts Prep</a></li>
-        <li><a href="payroll.html"              class="py-2 hover:text-blue-700">Payroll</a></li>
-        <li><a href="sole-trader.html"          class="py-2 hover:text-blue-700">Sole Trader</a></li>
-        <li><a href="cis.html"                  class="py-2 hover:text-blue-700">CIS</a></li>
-        <li><a href="vat.html"                  class="py-2 hover:text-blue-700">VAT</a></li>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center h-20">
+      <ul class="flex flex-wrap space-x-4 sm:space-x-8 text-gray-700">
+        <li><a href="index.html" class="relative inline-block py-2 px-2 sm:px-0 text-gray-900">
+          Home
+          <span class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-700"></span>
+        </a></li>
+        <li><a href="bookkeeping.html" class="py-2 px-2 hover:text-blue-700">Bookkeeping</a></li>
+        <li><a href="accounts-preparation.html" class="py-2 px-2 hover:text-blue-700">Accounts Prep</a></li>
+        <li><a href="payroll.html" class="py-2 px-2 hover:text-blue-700">Payroll</a></li>
+        <li><a href="sole-trader.html" class="py-2 px-2 hover:text-blue-700">Sole Trader</a></li>
+        <li><a href="cis.html" class="py-2 px-2 hover:text-blue-700">CIS</a></li>
+        <li><a href="vat.html" class="py-2 px-2 hover:text-blue-700">VAT</a></li>
       </ul>
-      <!-- Switch Accountants button top right -->
       <a href="switch-accountants.html"
-         class="ml-auto bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded transition">
-        Switch Accountants
+         class="ml-auto mt-2 sm:mt-0 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded transition">
+        Switch Accountants
       </a>
     </div>
   </nav>
 
   <!-- VIDEO HERO + HEADER LOGO + CURVED PLATE -->
-  <header class="relative overflow-hidden h-[60vh]">
+  <header class="relative overflow-hidden h-56 sm:h-64 md:h-80">
     <video class="absolute inset-0 w-full h-full object-cover"
            src="Video/SKY.mp4"
            autoplay muted loop playsinline></video>
 
-    <!-- Logo overlapping top-right -->
-    <div class="absolute top-4 right-8 z-30">
+    <!-- Logo overlapping top-left -->
+    <div class="absolute top-4 left-4 z-30">
       <a href="index.html">
         <img src="./images/hayes-lee-logo.svg"
              alt="Hayes Lee Accountants"
-             class="h-32 w-auto drop-shadow-lg"/>
+             class="h-24 sm:h-28 md:h-32 w-auto drop-shadow-lg"/>
       </a>
     </div>
 
     <!-- Overlay text -->
-    <div class="relative z-20 flex flex-col items-center justify-center h-full bg-black/40 text-center px-6 space-y-6">
-      <h1 class="text-2xl font-normal text-white">Welcome to Hayes Lee Accountants</h1>
-      <p class="max-w-2xl text-2xl text-white">
+    <div class="relative z-20 flex flex-col items-center justify-center h-full bg-black/40 text-center px-4 sm:px-6 space-y-4">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-normal">
+        Welcome to Hayes Lee Accountants
+      </h1>
+      <p class="max-w-2xl text-base sm:text-lg md:text-xl text-white">
         Your trusted partner for seamless, proactive accounting and tax services.
       </p>
-      <p class="max-w-2xl text-lg text-white">
-        Established in 2020, Hayes Lee Accountants is built on a wealth of expertise—our founding partner brings in-depth experience from a construction background, so we truly understand that industry’s nuances. Over the years we’ve streamlined financial processes across bookkeeping, VAT, payroll, CIS and tax returns, freeing up our clients to focus on growth. We also offer a fully remote, outsourced finance function, commercial project support, budgeting &amp; forecasting services—tailored to your needs.
+      <p class="max-w-2xl text-sm sm:text-base md:text-lg text-white">
+        Established in 2020, Hayes Lee Accountants is built on a wealth of expertise—our founding partner brings in‑depth experience from a construction background, so we truly understand that industry’s nuances. Over the years we’ve streamlined financial processes across bookkeeping, VAT, payroll, CIS and tax returns, freeing up our clients to focus on growth. We also offer a fully remote, outsourced finance function, commercial project support, budgeting & forecasting services—tailored to your needs.
       </p>
       <a href="#contact-form"
-         class="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded shadow transition">
-        Get in Touch
+         class="mt-2 sm:mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded shadow transition">
+        Get in Touch
       </a>
     </div>
 
     <!-- Curved white plate -->
-    <div class="absolute bottom-0 left-0 w-full h-56 bg-gray-100 rounded-t-[50%]"
+    <div class="absolute bottom-0 left-0 w-full h-32 bg-gray-100 rounded-t-[50%]"
          style="transform: translateY(50%);"></div>
   </header>
 
   <!-- ENQUIRY FORM -->
   <main class="flex-grow">
-    <section id="contact-form" class="py-12">
-      <h2 class="text-2xl font-semibold text-center mb-2">Get in Touch</h2>
+    <section id="contact-form" class="py-12 px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-center mb-2">Get in Touch</h2>
       <p class="text-center mb-6">Fill in the form below and we’ll get right back to you.</p>
 
       <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
             onsubmit="handleForm(event)"
             class="mx-auto w-full max-w-md space-y-6">
+
         <input type="hidden" name="form-name" value="contact" />
         <p class="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field"></label></p>
 
@@ -84,17 +84,17 @@
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Name*</label>
           <input type="text" name="name" required
-                 class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"/>
+                 class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none"/>
         </div>
         <!-- Service -->
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Service</label>
           <select name="service"
-                  class="w-full border border-black rounded-md px-3 py-2 focus:outline-none">
+                  class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none">
             <option>Bookkeeping</option>
-            <option>Accounts Preparation</option>
+            <option>Accounts Preparation</option>
             <option>Payroll</option>
-            <option>Sole Trader Tax</option>
+            <option>Sole Trader Tax</option>
             <option>CIS</option>
             <option>VAT</option>
             <option>Outsourced Finance</option>
@@ -106,24 +106,24 @@
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Email ID*</label>
           <input type="email" name="email" required
-                 class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"/>
+                 class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none"/>
         </div>
         <!-- Message -->
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Message</label>
           <textarea name="message" rows="4"
-                    class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"></textarea>
+                    class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none"></textarea>
         </div>
         <!-- Phone -->
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Phone Number</label>
           <input type="tel" name="phone"
-                 class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"/>
+                 class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none"/>
         </div>
         <!-- Submit -->
         <div class="text-center">
           <button type="submit"
-                  class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded transition">
+                  class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded transition">
             Submit
           </button>
         </div>
@@ -140,7 +140,7 @@
 
   <!-- FOOTER -->
   <footer class="py-6 bg-gray-200 text-center text-gray-600">
-    &copy; 2025 Hayes Lee Accountants
+    &copy; 2025 Hayes Lee Accountants
   </footer>
 
   <script>
