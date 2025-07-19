@@ -14,7 +14,7 @@
       <!-- Home Link -->
       <a href="index.html" class="text-gray-900 font-semibold">Home</a>
 
-      <!-- DESKTOP: service links inline -->
+      <!-- DESKTOP: inline links -->
       <ul class="hidden md:flex ml-8 space-x-8 text-gray-700">
         <li><a href="bookkeeping.html" class="hover:text-blue-700">Bookkeeping</a></li>
         <li><a href="accounts-preparation.html" class="hover:text-blue-700">Accounts Prep</a></li>
@@ -24,16 +24,16 @@
         <li><a href="vat.html" class="hover:text-blue-700">VAT</a></li>
       </ul>
 
-      <!-- MOBILE: Services dropdown -->
-      <details class="md:hidden ml-8 relative overflow-visible z-[9999]">
-        <summary class="flex items-center cursor-pointer text-gray-700">
+      <!-- MOBILE: dropdown -->
+      <details class="md:hidden ml-8 relative overflow-visible" style="z-index: 9999;">
+        <summary class="flex items-center cursor-pointer text-gray-700" style="z-index: 10000;">
           Services
           <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M19 9l-7 7-7-7"/>
           </svg>
         </summary>
-        <ul class="absolute mt-2 bg-white border rounded-lg shadow-lg w-48 right-0 z-[9999]">
+        <ul class="absolute mt-2 bg-white border rounded-lg shadow-lg w-48 right-0" style="z-index: 10000;">
           <li><a href="bookkeeping.html" class="block px-4 py-2 hover:bg-gray-100">Bookkeeping</a></li>
           <li><a href="accounts-preparation.html" class="block px-4 py-2 hover:bg-gray-100">Accounts Prep</a></li>
           <li><a href="payroll.html" class="block px-4 py-2 hover:bg-gray-100">Payroll</a></li>
