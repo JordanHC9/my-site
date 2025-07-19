@@ -11,7 +11,10 @@
   <!-- NAVIGATION -->
   <nav class="bg-white shadow relative z-50 overflow-visible">
     <div class="max-w-7xl mx-auto px-6 flex items-center h-20">
+      <!-- Home Link -->
       <a href="index.html" class="text-gray-900 font-semibold">Home</a>
+
+      <!-- DESKTOP: service links inline -->
       <ul class="hidden md:flex ml-8 space-x-8 text-gray-700">
         <li><a href="bookkeeping.html" class="hover:text-blue-700">Bookkeeping</a></li>
         <li><a href="accounts-preparation.html" class="hover:text-blue-700">Accounts Prep</a></li>
@@ -20,8 +23,10 @@
         <li><a href="cis.html" class="hover:text-blue-700">CIS</a></li>
         <li><a href="vat.html" class="hover:text-blue-700">VAT</a></li>
       </ul>
+
+      <!-- MOBILE: Services dropdown -->
       <details class="md:hidden ml-8 relative z-50 overflow-visible">
-        <summary class="flex items-center cursor-pointer text-gray-700">
+        <summary class="flex items-center cursor-pointer text-gray-700 z-50">
           Services
           <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -37,6 +42,8 @@
           <li><a href="vat.html" class="block px-4 py-2 hover:bg-gray-100">VAT</a></li>
         </ul>
       </details>
+
+      <!-- Spacer + Switch button -->
       <div class="ml-auto">
         <a href="switch-accountants.html"
            class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded transition">
@@ -157,4 +164,5 @@
   </script>
 </body>
 </html>
+
 
