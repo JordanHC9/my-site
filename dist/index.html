@@ -25,15 +25,15 @@
       </ul>
 
       <!-- MOBILE: Services dropdown -->
-      <details class="md:hidden ml-8 relative z-60">
-        <summary class="flex items-center cursor-pointer text-gray-700 z-60">
+      <details class="md:hidden ml-8 relative" style="z-index:1000;">
+        <summary class="flex items-center cursor-pointer text-gray-700" style="z-index:1001;">
           Services
           <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M19 9l-7 7-7-7"/>
           </svg>
         </summary>
-        <ul class="absolute mt-2 bg-white border rounded-lg shadow-lg w-48 right-0 z-60">
+        <ul class="absolute mt-2 bg-white border rounded-lg shadow-lg w-48 right-0" style="z-index:1002;">
           <li><a href="bookkeeping.html" class="block px-4 py-2 hover:bg-gray-100">Bookkeeping</a></li>
           <li><a href="accounts-preparation.html" class="block px-4 py-2 hover:bg-gray-100">Accounts Prep</a></li>
           <li><a href="payroll.html" class="block px-4 py-2 hover:bg-gray-100">Payroll</a></li>
@@ -54,19 +54,17 @@
   </nav>
 
   <!-- VIDEO HERO + CURVED PLATE -->
-  <header class="relative overflow-hidden h-[60vh] z-10">
+  <header class="relative overflow-hidden h-[60vh]">
     <video class="absolute inset-0 w-full h-full object-cover"
-           src="Video/SKY.mp4" autoplay muted loop playsinline></video>
+           src="Video/SKY.mp4"
+           autoplay muted loop playsinline></video>
 
-    <!-- Overlay content -->
-    <div class="relative z-20 flex flex-col items-center justify-center h-full bg-black/40 text-center px-6 space-y-6">
-      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal text-white">
-        Welcome to Hayes Lee Accountants
-      </h1>
-      <p class="max-w-2xl text-xl sm:text-2xl text-white">
+    <div class="relative z-40 flex flex-col items-center justify-center h-full bg-black/40 text-center px-6 space-y-6">
+      <h1 class="text-4xl md:text-6xl font-normal text-white">Welcome to Hayes Lee Accountants</h1>
+      <p class="max-w-2xl text-2xl text-white">
         Your trusted partner for seamless, proactive accounting and tax services.
       </p>
-      <p class="max-w-2xl text-base sm:text-lg text-white">
+      <p class="max-w-2xl text-lg text-white">
         Established in 2020, Hayes Lee Accountants is built on a wealth of expertise—our founding partner brings in-depth experience from a construction background, so we truly understand that industry’s nuances. Over the years we’ve streamlined financial processes across bookkeeping, VAT, payroll, CIS and tax returns, freeing up our clients to focus on growth. We also offer a fully remote, outsourced finance function, commercial project support, budgeting &amp; forecasting services—tailored to your needs.
       </p>
       <a href="#contact-form"
@@ -81,7 +79,7 @@
 
   <!-- ENQUIRY FORM -->
   <main class="flex-grow">
-    <section id="contact-form" class="py-12 px-4 sm:px-6 lg:px-8">
+    <section id="contact-form" class="py-12">
       <h2 class="text-2xl font-semibold text-center mb-2">Get in Touch</h2>
       <p class="text-center mb-6">Fill in the form below and we’ll get right back to you.</p>
 
@@ -96,7 +94,6 @@
           <input type="text" name="name" required
                  class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"/>
         </div>
-
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Service</label>
           <select name="service"
@@ -112,32 +109,27 @@
             <option>Budgeting &amp; Forecasting</option>
           </select>
         </div>
-
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Email ID*</label>
           <input type="email" name="email" required
                  class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"/>
         </div>
-
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Message</label>
           <textarea name="message" rows="4"
                     class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"></textarea>
         </div>
-
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Phone Number</label>
           <input type="tel" name="phone"
                  class="w-full border border-black rounded-md px-3 py-2 focus:outline-none"/>
         </div>
-
         <div class="text-center">
           <button type="submit"
                   class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded transition">
             Submit
           </button>
         </div>
-
         <div data-netlify-success class="hidden">
           <p class="text-center text-green-600 font-semibold">Thanks! Your enquiry has been received.</p>
         </div>
@@ -163,7 +155,6 @@
         .catch(() => form.querySelector('[data-netlify-error]').classList.remove('hidden'));
     }
   </script>
-
 </body>
 </html>
 
