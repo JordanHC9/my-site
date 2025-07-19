@@ -57,15 +57,6 @@
            src="Video/SKY.mp4"
            autoplay muted loop playsinline></video>
 
-    <!-- Logo overlapping top-right -->
-    <div class="absolute top-4 right-8 z-30">
-      <a href="index.html">
-        <img src="./images/hayes-lee-logo.svg"
-             alt="Hayes Lee Accountants"
-             class="h-32 w-auto drop-shadow-lg"/>
-      </a>
-    </div>
-
     <!-- Overlay text -->
     <div class="relative z-20 flex flex-col items-center justify-center h-full bg-black/40 text-center px-6 space-y-6">
       <h1 class="text-4xl md:text-6xl font-normal text-white">Welcome to Hayes Lee Accountants</h1>
@@ -100,6 +91,7 @@
           <label class="block text-blue-900 font-bold mb-1">Name*</label>
           <input type="text" name="name" required class="w-full rounded-md px-3 py-2 focus:outline-none"/>
         </div>
+
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Service</label>
           <select name="service" class="w-full rounded-md px-3 py-2 focus:outline-none">
@@ -114,24 +106,28 @@
             <option>Budgeting &amp; Forecasting</option>
           </select>
         </div>
+
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Email ID*</label>
           <input type="email" name="email" required class="w-full rounded-md px-3 py-2 focus:outline-none"/>
         </div>
+
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Message</label>
           <textarea name="message" rows="4" class="w-full rounded-md px-3 py-2 focus:outline-none"></textarea>
         </div>
+
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Phone Number</label>
           <input type="tel" name="phone" class="w-full rounded-md px-3 py-2 focus:outline-none"/>
         </div>
+
         <div class="text-center">
-          <button type="submit"
-                  class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded transition">
+          <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded transition">
             Submit
           </button>
         </div>
+
         <div data-netlify-success class="hidden">
           <p class="text-center text-green-600 font-semibold">Thanks! Your enquiry has been received.</p>
         </div>
@@ -157,4 +153,3 @@
   </script>
 </body>
 </html>
-
