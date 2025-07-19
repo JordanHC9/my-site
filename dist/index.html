@@ -3,12 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <!-- Google Search Console verification -->
-  <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" />
-
   <title>Home | Hayes Lee Accountants</title>
-  <meta name="description" content="Hayes Lee Accountants offers proactive accounting and tax services, specialising in bookkeeping, VAT, payroll, CIS, and outsourced finance. Established 2020 with deep industry expertise." />
   <link href="output.css" rel="stylesheet">
 </head>
 <body class="flex flex-col min-h-screen bg-gray-50">
@@ -19,19 +14,19 @@
       <!-- Home Link -->
       <a href="index.html" class="text-gray-900 font-semibold mr-8">Home</a>
 
-      <!-- Always-visible service links -->
-      <ul class="flex ml-8 space-x-8 text-gray-700">
+      <!-- DESKTOP: service links inline -->
+      <ul class="hidden md:flex space-x-8 text-gray-700">
         <li><a href="bookkeeping.html" class="hover:text-blue-700">Bookkeeping</a></li>
-        <li><a href="accounts-preparation.html" class="hover:text-blue-700">Accounts Prep</a></li>
+        <li><a href="accounts-preparation.html" class="hover:text-blue-700">Accounts Prep</a></li>
         <li><a href="payroll.html" class="hover:text-blue-700">Payroll</a></li>
-        <li><a href="sole-trader.html" class="hover:text-blue-700">Sole Trader</a></li>
+        <li><a href="sole-trader.html" class="hover:text-blue-700">Sole Trader</a></li>
         <li><a href="cis.html" class="hover:text-blue-700">CIS</a></li>
         <li><a href="vat.html" class="hover:text-blue-700">VAT</a></li>
       </ul>
 
-      <!-- (Optional) still have mobile dropdown if you like -->
-      <details class="md:hidden relative ml-8">
-        <summary class="flex items-center cursor-pointer text-gray-700">
+      <!-- MOBILE: Services dropdown -->
+      <details class="block md:hidden relative">
+        <summary class="flex items-center cursor-pointer text-gray-700 list-none">
           Services
           <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -39,9 +34,9 @@
         </summary>
         <ul class="absolute mt-2 bg-white border rounded-lg shadow-lg w-48 right-0">
           <li><a href="bookkeeping.html" class="block px-4 py-2 hover:bg-gray-100">Bookkeeping</a></li>
-          <li><a href="accounts-preparation.html" class="block px-4 py-2 hover:bg-gray-100">Accounts Prep</a></li>
+          <li><a href="accounts-preparation.html" class="block px-4 py-2 hover:bg-gray-100">Accounts Prep</a></li>
           <li><a href="payroll.html" class="block px-4 py-2 hover:bg-gray-100">Payroll</a></li>
-          <li><a href="sole-trader.html" class="block px-4 py-2 hover:bg-gray-100">Sole Trader</a></li>
+          <li><a href="sole-trader.html" class="block px-4 py-2 hover:bg-gray-100">Sole Trader</a></li>
           <li><a href="cis.html" class="block px-4 py-2 hover:bg-gray-100">CIS</a></li>
           <li><a href="vat.html" class="block px-4 py-2 hover:bg-gray-100">VAT</a></li>
         </ul>
@@ -56,29 +51,37 @@
     </div>
   </nav>
 
-  <!-- VIDEO HERO + HEADER LOGO + CURVED PLATE -->
+  <!-- VIDEO HERO + CURVED PLATE -->
   <header class="relative overflow-hidden h-[60vh]">
-    <video class="absolute inset-0 w-full h-full object-cover" src="Video/SKY.mp4" autoplay muted loop playsinline></video>
+    <video class="absolute inset-0 w-full h-full object-cover"
+           src="Video/SKY.mp4"
+           autoplay muted loop playsinline></video>
 
     <!-- Logo overlapping top-right -->
     <div class="absolute top-4 right-8 z-30">
       <a href="index.html">
-        <img src="./images/hayes-lee-logo.svg" alt="Hayes Lee Accountants" class="h-32 w-auto drop-shadow-lg"/>
+        <img src="./images/hayes-lee-logo.svg"
+             alt="Hayes Lee Accountants"
+             class="h-32 w-auto drop-shadow-lg"/>
       </a>
     </div>
 
     <!-- Overlay text -->
     <div class="relative z-20 flex flex-col items-center justify-center h-full bg-black/40 text-center px-6 space-y-6">
-      <h1 class="text-2xl font-normal text-white">Welcome to Hayes Lee Accountants</h1>
+      <h1 class="text-4xl md:text-6xl font-normal text-white">Welcome to Hayes Lee Accountants</h1>
       <p class="max-w-2xl text-2xl text-white">Your trusted partner for seamless, proactive accounting and tax services.</p>
       <p class="max-w-2xl text-lg text-white">
-        Established in 2020, Hayes Lee Accountants is built on a wealth of expertise—our founding partner brings in-depth experience from a construction background, so we truly understand that industry’s nuances. Over the years we’ve streamlined financial processes across bookkeeping, VAT, payroll, CIS and tax returns, freeing up our clients to focus on growth. We also offer a fully remote, outsourced finance function, commercial project support, budgeting &amp; forecasting services—tailored to your needs.
+        Established in 2020, Hayes Lee Accountants is built on a wealth of expertise—our founding partner brings in‑depth experience from a construction background, so we truly understand that industry’s nuances. Over the years we’ve streamlined financial processes across bookkeeping, VAT, payroll, CIS and tax returns, freeing up our clients to focus on growth. We also offer a fully remote, outsourced finance function, commercial project support, budgeting & forecasting services—tailored to your needs.
       </p>
-      <a href="#contact-form" class="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded shadow transition">Get in Touch</a>
+      <a href="#contact-form"
+         class="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded shadow transition">
+        Get in Touch
+      </a>
     </div>
 
-    <!-- Curved white plate -->
-    <div class="absolute bottom-0 left-0 w-full h-56 bg-gray-100 rounded-t-[50%]" style="transform: translateY(50%);"></div>
+    <!-- Curved plate -->
+    <div class="absolute bottom-0 left-0 w-full h-56 bg-gray-100 rounded-t-[50%]"
+         style="transform: translateY(50%);"></div>
   </header>
 
   <!-- ENQUIRY FORM -->
@@ -87,18 +90,19 @@
       <h2 class="text-2xl font-semibold text-center mb-2">Get in Touch</h2>
       <p class="text-center mb-6">Fill in the form below and we’ll get right back to you.</p>
 
-      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleForm(event)" class="mx-auto w-full max-w-md space-y-6">
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+            onsubmit="handleForm(event)"
+            class="mx-auto w-full max-w-md space-y-6">
         <input type="hidden" name="form-name" value="contact" />
         <p class="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field"></label></p>
 
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Name*</label>
-          <input type="text" name="name" required class="w-full border border-black rounded-md px-3 py-2"/>
+          <input type="text" name="name" required class="w-full rounded-md px-3 py-2 focus:outline-none"/>
         </div>
-
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Service</label>
-          <select name="service" class="w-full border border-black rounded-md px-3 py-2">
+          <select name="service" class="w-full rounded-md px-3 py-2 focus:outline-none">
             <option>Bookkeeping</option>
             <option>Accounts Preparation</option>
             <option>Payroll</option>
@@ -110,28 +114,30 @@
             <option>Budgeting &amp; Forecasting</option>
           </select>
         </div>
-
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Email ID*</label>
-          <input type="email" name="email" required class="w-full border border-black rounded-md px-3 py-2"/>
+          <input type="email" name="email" required class="w-full rounded-md px-3 py-2 focus:outline-none"/>
         </div>
-
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Message</label>
-          <textarea name="message" rows="4" class="w-full border border-black rounded-md px-3 py-2"></textarea>
+          <textarea name="message" rows="4" class="w-full rounded-md px-3 py-2 focus:outline-none"></textarea>
         </div>
-
         <div class="border border-black rounded-lg p-4">
           <label class="block text-blue-900 font-bold mb-1">Phone Number</label>
-          <input type="tel" name="phone" class="w-full border border-black rounded-md px-3 py-2"/>
+          <input type="tel" name="phone" class="w-full rounded-md px-3 py-2 focus:outline-none"/>
         </div>
-
         <div class="text-center">
-          <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded transition">Submit</button>
+          <button type="submit"
+                  class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded transition">
+            Submit
+          </button>
         </div>
-
-        <div data-netlify-success class="hidden"><p class="text-center text-green-600 font-semibold">Thanks! Your enquiry has been received.</p></div>
-        <div data-netlify-error class="hidden"><p class="text-center text-red-600 font-semibold">Oops! Something went wrong—please try again.</p></div>
+        <div data-netlify-success class="hidden">
+          <p class="text-center text-green-600 font-semibold">Thanks! Your enquiry has been received.</p>
+        </div>
+        <div data-netlify-error class="hidden">
+          <p class="text-center text-red-600 font-semibold">Oops! Something went wrong—please try again.</p>
+        </div>
       </form>
     </section>
   </main>
@@ -143,10 +149,12 @@
     function handleForm(e) {
       e.preventDefault();
       const form = e.target;
-      fetch("/", { method: "POST", body: new FormData(form) })
+      const data = new FormData(form);
+      fetch("/", { method: "POST", body: data })
         .then(() => form.querySelector('[data-netlify-success]').classList.remove('hidden'))
         .catch(() => form.querySelector('[data-netlify-error]').classList.remove('hidden'));
     }
   </script>
 </body>
 </html>
+
