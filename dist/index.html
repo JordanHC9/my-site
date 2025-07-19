@@ -9,7 +9,7 @@
 <body class="flex flex-col min-h-screen bg-gray-50">
 
   <!-- NAVIGATION -->
-  <nav class="bg-white shadow relative z-50 overflow-visible">
+  <nav class="bg-white shadow relative z-50">
     <div class="max-w-7xl mx-auto px-6 flex items-center h-20">
       <!-- Home Link -->
       <a href="index.html" class="text-gray-900 font-semibold">Home</a>
@@ -25,15 +25,15 @@
       </ul>
 
       <!-- MOBILE: Services dropdown -->
-      <details class="md:hidden ml-8 relative z-50 overflow-visible">
-        <summary class="flex items-center cursor-pointer text-gray-700 z-50">
+      <details class="md:hidden ml-8 relative z-60">
+        <summary class="flex items-center cursor-pointer text-gray-700 z-60">
           Services
           <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M19 9l-7 7-7-7"/>
           </svg>
         </summary>
-        <ul class="absolute mt-2 bg-white border rounded-lg shadow-lg w-48 right-0 z-50">
+        <ul class="absolute mt-2 bg-white border rounded-lg shadow-lg w-48 right-0 z-60">
           <li><a href="bookkeeping.html" class="block px-4 py-2 hover:bg-gray-100">Bookkeeping</a></li>
           <li><a href="accounts-preparation.html" class="block px-4 py-2 hover:bg-gray-100">Accounts Prep</a></li>
           <li><a href="payroll.html" class="block px-4 py-2 hover:bg-gray-100">Payroll</a></li>
@@ -53,20 +53,21 @@
     </div>
   </nav>
 
-  <!-- HERO -->
-  <header class="relative overflow-hidden h-auto md:h-[60vh]">
+  <!-- VIDEO HERO + CURVED PLATE -->
+  <header class="relative overflow-hidden h-[60vh] z-10">
     <video class="absolute inset-0 w-full h-full object-cover"
            src="Video/SKY.mp4" autoplay muted loop playsinline></video>
 
-    <div class="relative z-40 flex flex-col items-center justify-center h-full bg-black/40 text-center px-4 sm:px-6 lg:px-8 space-y-4 py-12 md:py-0">
-      <h1 class="text-3xl sm:text-4xl md:text-6xl font-normal text-white max-w-2xl">
+    <!-- Overlay content -->
+    <div class="relative z-20 flex flex-col items-center justify-center h-full bg-black/40 text-center px-6 space-y-6">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal text-white">
         Welcome to Hayes Lee Accountants
       </h1>
-      <p class="text-lg sm:text-xl md:text-2xl text-white max-w-2xl">
+      <p class="max-w-2xl text-xl sm:text-2xl text-white">
         Your trusted partner for seamless, proactive accounting and tax services.
       </p>
-      <p class="text-base sm:text-lg text-white max-w-xl">
-        Established in 2020, Hayes Lee Accountants is built on a wealth of expertise—our founding partner brings in‑depth experience from a construction background, so we truly understand that industry’s nuances. Over the years we’ve streamlined financial processes across bookkeeping, VAT, payroll, CIS and tax returns, freeing up our clients to focus on growth. We also offer a fully remote, outsourced finance function, commercial project support, budgeting & forecasting services—tailored to your needs.
+      <p class="max-w-2xl text-base sm:text-lg text-white">
+        Established in 2020, Hayes Lee Accountants is built on a wealth of expertise—our founding partner brings in-depth experience from a construction background, so we truly understand that industry’s nuances. Over the years we’ve streamlined financial processes across bookkeeping, VAT, payroll, CIS and tax returns, freeing up our clients to focus on growth. We also offer a fully remote, outsourced finance function, commercial project support, budgeting &amp; forecasting services—tailored to your needs.
       </p>
       <a href="#contact-form"
          class="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded shadow transition">
@@ -74,7 +75,7 @@
       </a>
     </div>
 
-    <div class="absolute bottom-0 left-0 w-full h-48 md:h-56 bg-gray-100 rounded-t-[50%]"
+    <div class="absolute bottom-0 left-0 w-full h-56 bg-gray-100 rounded-t-[50%]"
          style="transform: translateY(50%);"></div>
   </header>
 
@@ -83,10 +84,10 @@
     <section id="contact-form" class="py-12 px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl font-semibold text-center mb-2">Get in Touch</h2>
       <p class="text-center mb-6">Fill in the form below and we’ll get right back to you.</p>
+
       <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
             onsubmit="handleForm(event)"
             class="mx-auto w-full max-w-md space-y-6">
-
         <input type="hidden" name="form-name" value="contact" />
         <p class="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field"></label></p>
 
@@ -162,7 +163,9 @@
         .catch(() => form.querySelector('[data-netlify-error]').classList.remove('hidden'));
     }
   </script>
+
 </body>
 </html>
+
 
 
