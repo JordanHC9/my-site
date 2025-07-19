@@ -8,40 +8,28 @@
 </head>
 <body class="flex flex-col min-h-screen bg-gray-50">
 
-  <!-- NAVIGATION -->
-  <nav class="bg-white shadow relative z-50 overflow-visible">
-    <div class="max-w-7xl mx-auto px-6 flex items-center h-20">
-      <!-- Home Link -->
-      <a href="index.html" class="text-gray-900 font-semibold">Home</a>
-
-      <!-- DESKTOP: service links inline -->
-      <ul class="hidden md:flex ml-8 space-x-8 text-gray-700">
-        <li><a href="bookkeeping.html" class="hover:text-blue-700">Bookkeeping</a></li>
-        <li><a href="accounts-preparation.html" class="hover:text-blue-700">Accounts Prep</a></li>
-        <li><a href="payroll.html" class="hover:text-blue-700">Payroll</a></li>
-        <li><a href="sole-trader.html" class="hover:text-blue-700">Sole Trader</a></li>
-        <li><a href="cis.html" class="hover:text-blue-700">CIS</a></li>
-        <li><a href="vat.html" class="hover:text-blue-700">VAT</a></li>
-      </ul>
-
-      <!-- MOBILE: Services dropdown -->
-      <details class="md:hidden ml-8 relative z-50">
-        <summary class="flex items-center cursor-pointer text-gray-700">
-          Services
-          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M19 9l-7 7-7-7"/>
-          </svg>
-        </summary>
-        <ul class="absolute mt-2 bg-white border rounded-lg shadow-lg w-48 right-0 z-50">
-          <li><a href="bookkeeping.html" class="block px-4 py-2 hover:bg-gray-100">Bookkeeping</a></li>
-          <li><a href="accounts-preparation.html" class="block px-4 py-2 hover:bg-gray-100">Accounts Prep</a></li>
-          <li><a href="payroll.html" class="block px-4 py-2 hover:bg-gray-100">Payroll</a></li>
-          <li><a href="sole-trader.html" class="block px-4 py-2 hover:bg-gray-100">Sole Trader</a></li>
-          <li><a href="cis.html" class="block px-4 py-2 hover:bg-gray-100">CIS</a></li>
-          <li><a href="vat.html" class="block px-4 py-2 hover:bg-gray-100">VAT</a></li>
-        </ul>
-      </details>
+    <!-- NAVIGATION -->
+- <nav class="bg-white shadow relative z-50 overflow-visible">
++ <nav class="bg-white shadow relative z-50 overflow-visible">
+     <div class="max-w-7xl mx-auto px-6 flex items-center h-20">
+@@
+-      <!-- MOBILE: Services dropdown -->
+-      <details class="md:hidden ml-8 relative z-50">
++      <!-- MOBILE: Services dropdown -->
++      <details class="md:hidden ml-8 relative overflow-visible z-[9999]">
+         <summary class="flex items-center cursor-pointer text-gray-700">
+           Services
+@@
+-        <ul class="absolute mt-2 bg-white border rounded-lg shadow-lg w-48 right-0 z-50">
++        <ul class="absolute mt-2 bg-white border rounded-lg shadow-lg w-48 right-0 z-[9999]">
+           <li><a href="bookkeeping.html" class="block px-4 py-2 hover:bg-gray-100">Bookkeeping</a></li>
+           <li><a href="accounts-preparation.html" class="block px-4 py-2 hover:bg-gray-100">Accounts Prep</a></li>
+           <li><a href="payroll.html" class="block px-4 py-2 hover:bg-gray-100">Payroll</a></li>
+           <li><a href="sole-trader.html" class="block px-4 py-2 hover:bg-gray-100">Sole Trader</a></li>
+           <li><a href="cis.html" class="block px-4 py-2 hover:bg-gray-100">CIS</a></li>
+           <li><a href="vat.html" class="block px-4 py-2 hover:bg-gray-100">VAT</a></li>
+         </ul>
+       </details>
 
       <!-- Spacer + Switch button -->
       <div class="ml-auto">
