@@ -1,4 +1,5 @@
 [build]
-  # No build command needed if you've already committed the built files:
-  command = ""
-  publish = "dist"
+  # the command Netlify will run to build your site
+  command   = "npm run build"
+  # the folder it should publish
+  publish   = "dist"
