@@ -1,15 +1,11 @@
 // tailwind.config.js
 module.exports = {
   content: [
-    "./src/**/*.{html,js}",
-    "./dist/**/*.html",
+    "./*.html",        // all html files in project root
+    "./dist/**/*.html" // and anything under dist
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        sans: ["Inter", "ui‑sans‑serif", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"],
-      },
-    },
+    extend: {}
   },
   plugins: [],
 }
