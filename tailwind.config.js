@@ -1,11 +1,15 @@
 // tailwind.config.js
 module.exports = {
-  content: [
-    "./*.html",        // all html files in project root
-    "./dist/**/*.html" // and anything under dist
-  ],
+  content: ["./dist/**/*.html"],
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+      },
+      colors: {
+        // if you want custom reds you can add them here
+      },
+    },
   },
   plugins: [],
-}
+};
