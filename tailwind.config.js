@@ -1,15 +1,16 @@
-// tailwind.config.js
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./dist/**/*.html"],
+  content: [
+    // wherever your HTML lives:
+    "./dist/**/*.html"
+  ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
-      },
-      colors: {
-        // if you want custom reds you can add them here
-      },
-    },
+        // map Tailwind’s "font-sans" to Inter first
+        sans: ["Inter", "ui-sans-serif", "system-ui"]
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 };
